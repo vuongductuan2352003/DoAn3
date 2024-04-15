@@ -14,67 +14,46 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
 </head>
 
-<body ng-ap="APIDOGOMYNGHE" ng-controller="LoginController">
+<body>
+
     <div id="login">
         <div id="logo">
-            <a href=""><img id="img-logo" src="{{ asset('ĐỒ GỖ MỸ NGHỆ/Slide/2.png') }}" alt="">
-
-            </a>
-
+            <a href=""><img id="img-logo" src="{{ asset('ĐỒ GỖ MỸ NGHỆ/Slide/2.png') }}" alt=""> </a>
         </div>
-
-        <div id="login-signup">
-            <h2 class="background-lg-sg" style="text-align:center;float:left;" id="login-2" class="zoomable">LOGIN</h2>
-            <h2 class="background-lg-sg" style="text-align:center;float:left;margin-left:30px" id="signup-2" class="zoomable">SIGN UP</h2>
+        <div id="login-1">
+            <h2  >LOGIN</h2>
         </div>
+<form action="" >
+    @csrf
+    <div id="login-2">
 
-
-
-     
-        <form action="{{ route('registerr') }}" method="POST">
-            @csrf
-            <div id="signup-3">
-                <div class="email" style="height: 30px;margin-left:10px ">
-                    <label for="email">Email Address</label>
-                    <input id="email" type="email" name="email" placeholder="Username@gmail.com" />
-                </div>
-                @if ($errors->has('email'))
-                <span class="error-message">
-                    {{ $errors->first('email') }}
-                </span>
-                @endif
-                <div class="email" style="height: 30px;margin-left:10px ">
-                    <label for="username">User Name</label>
-                    <input id="name" type="name" name="name" placeholder="User name" />
-                </div>
-                @if ($errors->has('name'))
-                <span class="error-message">
-                    {{ $errors->first('name') }}
-                </span>
-                @endif
-                <div class="email" style="height: 30px;margin-left:10px ">
-                    <label for="email">Password</label>
-                    <input id="password" name="password" type="password" placeholder="password" />
-
-                </div>
-                @if ($errors->has('password'))
-                <span class="error-message">
-                    {{ $errors->first('password') }}
-                </span>
-                @endif
-                <div class="email" style="height: 30px;margin-left:10px ">
-            <label for="email">Confirm Password</label>
-            <input id="password_confirmation" type="password" placeholder="Confirm password" name="password_confirmation" required />
-        </div>
-
-
-
-                <button class="signup" type="submit">Sign up</button>
+            <div class="email">
+                <label for="email">Địa chỉ email</label>
+                <input type="text" id="username" name="username" required>
             </div>
-        </form>
+            <div class="password">
+                <label for="password">Mật khẩu</label>
+                <div style="display: flex;">
+                    <input type="password" id="password" name="password" style="width: 300px" required>
+                    <input style="width: 20px;" type="checkbox" id="showPassword">
+                </div>
+
+            </div>
+
+
+            <button class="login" onclick="login()" type="button"> Login </button>
+            <div class="register">
+    Bạn mới đến Đồ Gỗ Vương Tuấn?<a href=""> Đăng Ký! </a>
+</div>
+        </div>
+</form>
+        
+
+
+
     </div>
 
-    </form>
+
 
     <script src="{{ asset('js/login.js') }}"></script>
 

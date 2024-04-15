@@ -14,47 +14,72 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
 </head>
 
-<body >
-    <div id="login">
+<body>
+    @if (Session::has('error'))
+    <div class="alert alert-danger">
+        {{ Session::get('error') }}
+    </div>
+    @endif
+    <div id="login" style="height: 700px;">
         <div id="logo">
             <a href=""><img id="img-logo" src="{{ asset('ĐỒ GỖ MỸ NGHỆ/Slide/2.png') }}" alt="">
-
             </a>
-
+        </div>
+        <div id="login-1">
+            <h2 class="background-lg-sg"  >SIGN UP</h2>
         </div>
 
-        <div id="login-signup">
-        
-            <h2 class="background-lg-sg" style="text-align:center;float:left;margin-left:30px" id="signup-2" class="zoomable">SIGN UP</h2>
-        </div>
-
-        <form action="" method="POST">
+        <form action="{{ route('registerr') }}" method="POST">
             @csrf
-              <div id="signup-3">
-            <div class="email" style="height: 30px;margin-left:10px ">
-                <label for="email">Email Address</label>
-                <input type="email" name="email" placeholder="Username@gmail.com" />
-            </div>
-            <div class="email" style="height: 30px;margin-left:10px ">
-                <label for="username">User Name</label>
-                <input type="name" name="name"  placeholder="User name" />
-            </div>
+            <div id="signup-3">
+                <div class="email" style="height: 30px;margin-left:10px ">
+                    <label for="email">Email Address</label>
+                    <input id="email" type="email" name="email" placeholder="Username@gmail.com" value="{{ old('email') }}" />
+                    @error('email')
+                    <span class="text-danger">{{ $message }}</span>
+                    @enderror
+                </div>
+                <div class="email" style="height: 30px;margin-left:10px ">
+                    <label for="email">phone</label>
+                    <input id="phone" name="phone" type="phone" placeholder="phone" />
+                    <!-- @error('password')
+                <span class="text-danger">{{ $message }}</span>
+            @enderror -->
+                </div>
+                <div class="email" style="height: 30px;margin-left:10px ">
+                    <label for="username">User Name</label>
+                    <input id="name" type="name" name="name" placeholder="User name" value="{{ old('name') }}" />
+                    @error('name')
+                    <span class="text-danger">{{ $message }}</span>
+                    @enderror
+                </div>
 
-            <div class="email" style="height: 30px;margin-left:10px ">
-                <label for="email">Password</label>
-                <input name="password" type="password" placeholder="password" />
+                <div class="email" style="height: 30px;margin-left:10px ">
+                    <label for="email">Password</label>
+                    <input id="password" name="password" type="password" placeholder="password" />
+                    @error('password')
+                    <span class="text-danger">{{ $message }}</span>
+                    @enderror
+                </div>
+               
+                <div class="email" style="height: 30px;margin-left:10px ">
+                    <label for="email">Confirm Password</label>
+                    <input id="password_confirmation" type="password" placeholder="Confirm password" name="password_confirmation" required />
+                    @error('password_confirmation')
+                    <span class="text-danger">{{ $message }}</span>
+                    @enderror
+                </div>
+              
+                <button class="signup" type="submit">Sign up</button>
+                <div class="register">
+    Bạn mới đến Đồ Gỗ Vương Tuấn?<a href=""> Đăng Ký! </a>
+</div>
             </div>
-            <div class="email" style="height: 30px;margin-left:10px ">
-                <label for="email">Xác nhận</label>
-                <input type="password" placeholder="password" />
-            </div>
-            <button class="signup" type="submit">Sign up</button>
-        </div>
         </form>
-      
+
     </div>
-   
-</form>
+
+    </form>
 
     <script src="{{ asset('js/login.js') }}"></script>
 

@@ -32,7 +32,8 @@ Route::get('/login', function () {
 
 
 Route::get('/login', [UserController::class, 'login'])->name('login');
-Route::post('/login', [UserController::class, 'postRegister'])->name('registerr');
+Route::get('/register', [UserController::class, 'Register'])->name('register');
+Route::post('/register', [UserController::class, 'postRegister'])->name('registerr');
 
 // chitietsanpham
 use App\Http\Controllers\ChiTietSanPhamController;
