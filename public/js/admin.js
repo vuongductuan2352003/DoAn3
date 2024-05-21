@@ -34,3 +34,7 @@ if(isLight()){
         document.getElementById('deleteForm' + MaSanPham).submit(); // Gửi form nếu người dùng đồng ý
     }
 }
+   
+
+
+

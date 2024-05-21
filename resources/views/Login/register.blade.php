@@ -20,7 +20,7 @@
         {{ Session::get('error') }}
     </div>
     @endif
-    <div id="login" style="height: 700px;">
+    <div id="login" style="height: 720px;">
         <div id="logo">
             <a href=""><img id="img-logo" src="{{ asset('ĐỒ GỖ MỸ NGHỆ/Slide/2.png') }}" alt="">
             </a>
@@ -42,9 +42,9 @@
                 <div class="email" style="height: 30px;margin-left:10px ">
                     <label for="email">phone</label>
                     <input id="phone" name="phone" type="phone" placeholder="phone" />
-                    <!-- @error('password')
+                    @error('phone')
                 <span class="text-danger">{{ $message }}</span>
-            @enderror -->
+            @enderror
                 </div>
                 <div class="email" style="height: 30px;margin-left:10px ">
                     <label for="username">User Name</label>
@@ -71,8 +71,8 @@
                 </div>
               
                 <button class="signup" type="submit">Sign up</button>
-                <div class="register">
-    Bạn mới đến Đồ Gỗ Vương Tuấn?<a href=""> Đăng Ký! </a>
+                <div class="register" style="margin-top: 8px;">
+    Bạn đã có Tài Khoản?<a href="{{ route('login') }}"> Đăng Nhập! </a>
 </div>
             </div>
         </form>

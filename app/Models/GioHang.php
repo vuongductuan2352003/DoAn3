@@ -14,9 +14,15 @@ class GioHang extends Model
     protected $fillable = [
         'MaSanPham',
         'SoLuong',
+        'id_user',
+        'created_at',
+        'updated_at',
     ];
     public function sanpham()
     {
-        return $this->hasOne(SanPham::class, 'MaSanPham', 'MaSanPham');
+        return $this->belongsTo(SanPham::class, 'MaSanPham', 'MaSanPham');
+    }
+    public function User(){
+        return $this->belongsTo(User::class,'id_user','id');
     }
 }

@@ -5,13 +5,34 @@ use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
-
+use Illuminate\Support\Facades\Session;
 class UserController extends Controller
 {
     public function login(){
+       
+        if(Auth::check()){
+           $role = auth()->user()->role;
+           if($role==0){  
+                 return redirect()->route('TrangChu')->with('error', 'Bạn đã đăng nhập!');
+            }
+           else if($role==1){
+            return redirect()->route('admin.index')->with('error', 'Bạn đã đăng nhập!');
+           }
+        }
+       
         return view('login.index');
     }
    public function Register(){
+   
+    if(Auth::check()){
+        $role = auth()->user()->role;
+        if($role==0){  
+              return redirect()->route('TrangChu')->with('error', 'Bạn đã đăng nhập!');
+         }
+        else if($role==1){
+         return redirect()->route('admin.index')->with('error', 'Bạn đã đăng nhập!');
+        }
+     }
     return view('login.register');
    }
     // public function postRegister(Request $req ){
@@ -42,6 +63,7 @@ class UserController extends Controller
         'name' => 'required',
         'email' => 'required|email|ends_with:gmail.com|unique:users,email',
         'password' => 'required|min:6|confirmed',
+        'phone'=> 'min:10|max:10'
     ]);
 
     // Nếu validation fails, redirect lại với thông báo lỗi
@@ -69,5 +91,35 @@ class UserController extends Controller
     return redirect()->route('login');
 }
 
-    
+    public function postLogin(Request $req){
+        // dd($req->all());
+        // try{
+
+       
+        //     User::create($req->all());
+        //  }catch(\Throwable $th){
+        //     dd($th);
+        // }
+        // return redirect()->route('hi');
+        if(Auth::attempt(['email' => $req->email, 'password' => $req->password,'role'=>0])) {
+            $previousUrl = Session::get('previousUrl');
+                if($previousUrl){
+                    return redirect($previousUrl);
+                }else{
+                     return redirect()->route('TrangChu')->with('success', 'Đăng nhập thành công! Chào mừng bạn đến với Đồ Gỗ Vương Tuấn');
+
+                }
+        } else if(Auth::attempt(['email' => $req->email, 'password' => $req->password,'role'=>1])){
+            return redirect()->route('admin.index')->with('success', 'Đăng nhập thành công! Chào mừng bạn đến với Quản Trị Viên Đồ Gỗ Vương Tuấn');
+        }
+        else {
+            return redirect()->back()->with('error', 'Email hoặc mật khẩu không đúng');
+        }
+       
+    }
+
+    public function logout(Request $req){
+        Auth::logout();
+        return redirect()->back();
+    }
 }

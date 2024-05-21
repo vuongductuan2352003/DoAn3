@@ -435,190 +435,951 @@
 
 /* cửa hàng sản phẩm */
 
+#main-middle-2 {
+  width: 100%;
+  height: 1230px;
+
+  float: left;
+}
+
 #CHSP {
-    margin: 30px 450px;
+  margin: 30px 550px;
+  float: left;
+}
+
+#CHSP-text {
+  float: left;
+  margin: 5px 430px;
+  font-family: "Quicksand", sans-serif;
+  font-size: 16px;
+}
+
+.text-zoom-2 {
+  background-color: #f1f1f1;
+  color: #a03522;
+  font-size: 28.6px;
+  margin: 200px 180px;
+  opacity: 0.8;
+  text-align: center;
+  width: 554px;
+  height: 100px;
+  line-height: 10px;
+  position: absolute;
+  font-family: "Quicksand", sans-serif;
+
+}
+
+.content-1 {
+  height: 500px;
+  width: 900px;
+  overflow: hidden;
+  float: left;
+  position: relative;
+  margin: 10px 10px;
+}
+
+.zoomin-1 img {
+  height: 500px;
+  width: 900px;
+  float: left;
+  position: relative;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+  filter: brightness(80%);
+}
+
+.zoomin-1:hover img {
+
+  transform: scale(1.15);
+  filter: brightness(60%);
+
+
+}
+
+.border-zoom-1 {
+  width: 490px;
+  height: 70px;
+  border: 3px solid #a03522;
+  position: absolute;
+  margin: 12px 25px;
+  opacity: 0;
+  -webkit-transition: all 0.7s ease;
+  -moz-transition: all 0.7s ease;
+  -ms-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+
+
+}
+
+.zoomin-1:hover .border-zoom-1 {
+  width: 460px;
+  height: 80px;
+  margin: 7px 43px;
+  opacity: 1;
+  transform: scale(1.2);
+
+}
+
+.XCT{
+  height: 25px;
+  width: 124px;
+  border: 2px solid;
+  font-size: 12px;
+  margin: -5px 200px;
+  border-color: #8d0000;
+  border-top-right-radius: 99px;
+  border-top-left-radius: 99px;
+  border-bottom-left-radius: 99px;
+  border-bottom-right-radius: 99px;
+  font-family: "Quicksand", sans-serif;
+  position: absolute;
+}
+
+.XCT:hover {
+  background-color: #8d0000;
+
+}
+
+.XCT:hover strong {
+  color: white;
+}
+
+
+
+#gg {
+  margin: 3px 0px;
+}
+
+#ggg {
+  margin: 3px 0px;
+}
+
+#gggg {
+  margin: 3px 0px;
+}
+
+#ggggg {
+  margin: 3px 0px;
+}
+
+.text-zoom-3 {
+  background-color: #f1f1f1;
+  color: #a03522;
+  font-size: 23.4px;
+  margin: 200px 90px;
+  opacity: 0.8;
+  text-align: center;
+  width: 408px;
+  height: 88px;
+  line-height: 10px;
+  position: absolute;
+  font-family: "Quicksand", sans-serif;
+
+}
+
+.content-2 {
+  height: 500px;
+  width: 580px;
+  overflow: hidden;
+  float: left;
+  position: relative;
+  margin: 10px 10px;
+}
+
+.zoomin-2 img {
+  height: 500px;
+  width: 580px;
+  float: left;
+  position: relative;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+  filter: brightness(80%);
+}
+
+.zoomin-2:hover img {
+
+  transform: scale(1.15);
+  filter: brightness(60%);
+
+
+}
+
+.border-zoom-2 {
+  width: 350px;
+  height: 60px;
+  border: 3px solid #a03522;
+  position: absolute;
+  margin: 12px 25px;
+  opacity: 0;
+  -webkit-transition: all 0.7s ease;
+  -moz-transition: all 0.7s ease;
+  -ms-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+}
+
+.zoomin-2:hover .border-zoom-2 {
+  width: 338px;
+  height: 70px;
+  margin: 7px 34px;
+  opacity: 1;
+  transform: scale(1.2);
+
+}
+
+
+#CHSP-text {
+  float: left;
+  margin: 5px 430px;
+  font-family: "Quicksand", sans-serif;
+  font-size: 16px;
+}
+
+
+/* danh sách sản phẩm */
+
+#SPCHINH{
+  width: 100%;
+  height: 1314px;
+
+  float: left;
+ 
+  text-align: center;
+ 
+}
+#SPCHINH li{
+  display: inline-block;
+  margin-right: 20px;
+padding-top: 15px;
+  width: 199px;
+  height: 25px;
+  font-size: 12.5px;
+  text-align: center;
+cursor: pointer;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  background-color: #A03522;
+  color: white;
+}
+#block1{
+  
+  clip-path: polygon(100% 0, 100% 85%, 55% 85%,50% 100%, 45% 85%, 0 85%, 0 0);
+
+}
+
+
+.MAUSP{
+  width: 470px;
+  height: 555px;
+  box-shadow: 0 10px 20px rgba(0,0,0,.19), 0 6px 6px rgba(0,0,0,.22);
+  float: left;
+  margin-top: 20px;
+  margin-left: 25px;
+  margin-right: 5px;
+  float: left;
+  text-align: center;
+  
+  }
+  .img {
+  width: 100%;
+  height: 430px;
+  position: relative;
+  overflow: hidden;
+  
+  }
+  .img img{
+    width: 100%;
+    height: 430px;
+    position: relative;
+    overflow: hidden;
+    
+    }
+  
+  a{
+  text-decoration: none;
+  }
+  
+  #textttt{
+  
+  
+  background-color:white;
+  z-index: 1;
+  width: 100%;
+  }
+  #textttt a{
+  color: rgb(61, 75, 92);
+  }
+  #textttt a:hover{
+    color: rgb(34, 39, 46);
+  }
+  .heart{
+  border:1px solid rgb(252, 249, 249);
+  position: absolute;
+  top: 0;
+  width: 35px;
+  height: 35px;
+  right: 10px;
+  margin-top: 10px;
+  opacity: 0;
+  border-top-left-radius:99px;
+  border-top-right-radius:99px;
+  border-bottom-left-radius: 99px;
+  border-bottom-right-radius: 99px;
+  font-size: 20px;
+  transition: 0.6s;
+  }
+  
+  .heart:hover{
+  background-color: #A03522;
+  border: 0;
+  }
+  .MAUSP:hover .heart{
+  
+  
+  opacity: 1;
+  }
+  #KHUNG-SP{
+    display: block;
+    width:100%;
+    height: 1182px;
+  
+    margin-top: -10px;
+  
+  }
+  #KHUNG-SPP{
+     display: none;
+     width:100%;
+     height: 1182px;
+   
+     margin-top: -10px;
+   
+   }
+   #KHUNG-SPPP{
+     display: none;
+     width:100%;
+     height: 1182px;
+   
+     margin-top: -10px;
+   
+   }
+   #KHUNG-SPPPP{
+     display: none;
+     width:100%;
+     height: 1182px;
+   
+     margin-top: -10px;
+   
+   }
+   #XCH{
+
+    margin-left: 700px;
+       width: 200px;
+       height: 40px;
+       border:2px solid #5A4137;
+       
+    }
+    #XCH a{
+      margin: 10px 20px;
+       float: left;
+       color: #5A4137;
+       
+       font-family: "Quicksand", sans-serif;
+    }
+    #XCH:hover{
+       background-color: #5A4137;
+    
+    }
+    #XCH:hover a{
+     
+       color: white;
+    }
+
+
+
+ 
+#DTT{
+    width: 100%;
+    height: 500px;
+    position: relative;
     float: left;
  }
  
- #CHSP-text {
-    float: left;
-    margin: 5px 330px;
-    font-family: "Quicksand", sans-serif;
-    font-size: 16px;
+ #DTT-1{
+    width: 980px;
+    height: 500px;
+    position: absolute;
+    top: 0;
+ 
+ 
+  
+ }
+ #TC{
+    height: 500px;
+    width: 556px;
+   background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 0;
+   
+    left: 967px;
+  
+ }
+ 
+#formm{
+    margin-top: -100px;
+     width: 670px;
+     height: 550px;
+  margin-left: 150px;
+     float: left;
+  }
+
+  #DTT-1 h3{
+    color: #5A4137;
+    font-size: 29px;
+   margin-left: -40px;
+   margin-top: 60px;
+ 
+ }
+ .button-call{
+    width: 193px;
+    height: 46px;
+    margin: 20px 170px;
+    background-color: #5A4137;
+   
+    
+ }
+ .button-call a{
+    color: white;
+    font-size: 18px;
+ float: left;
+ margin-top: 12px;
+    margin-left: 25px;
+    
+    
+ }
+ #TC h2{
+    margin-top: 60px;
+   
+ }
+ 
+.GLHH{
+    width: 136px;
+    height: 44px;
+    margin-left: 250px;
+    background-color: #5A4137;
+    color: white;
+    border: 0;
+ }
+ 
+.borderr{
+    margin: 0px 20px;
+    border: 1px solid #8d0000;
+    width: 600px;
+    height: 35px;
  }
 
- .text-zoom-2 {
-    background-color: #f1f1f1;
-    color: #a03522;
-    font-size: 28.6px;
-    margin: 180px 100px;
-    opacity: 0.8;
-    text-align: center;
-    width: 554px;
-    height: 100px;
-    line-height: 10px;
-    position: absolute;
-    font-family: "Quicksand", sans-serif;
+
+ 
+#DTQT{
+    width: 100%;
+    height: 320px;
+   
+    float: left;
  
  }
- 
- .content-1 {
-    height: 448px;
-    width: 756px;
+ #DVCLG {
+    width: 450px;
+    height: 60px;
+    margin: 20px 580px;
+    border: 0px solid;
+}
+.h {
+    float: left;
+    box-sizing: border-box;
+    color: #222222;
+    font-family: "Quicksand", sans-serif;
+    font-size: 16px;
+    line-height: 25.6px;
+}
+
+/*  CSS PHẦN CHỨA NỘI DUNG */
+.grid-bannerrr {
+   
     overflow: hidden;
     float: left;
-    position: relative;
-    margin: 10px 10px;
- }
- 
- .zoomin-1 img {
-    height: 448px;
-    width: 756px;
+  
+  }
+  
+  /* CSS PHẦN SLIDE CHUYỂN DỘNG */
+  .slidesss {
+  
+    height: 100%;
+    /* border: solid; */
+    display: flex;
+  }
+  .slideee img {
+    width: 100%;
+    height: 115px;
+  }
+  .slidesss input {
+    display: none;
+  }
+  .slideee {
+    width: 389px;
+    height: 115px;
+  
+    transition: 0.7s;
+  }
+  
+  
+  #raa1:checked ~ .firstt {
+    margin-left: 0;
+    
+  }
+  #raa2:checked ~ .firstt {
+    margin-left: -5.5%;
+  }
+  
+  
+  
+  /* .buttons {
+    display: inline-block;
+  } */
+  /* code nút button trái phải */
+  
+  .prevv {
+   
+    position: absolute;
+     margin-top: -70px;
+    height: 60px;
+    width: 35px;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    background-color: #757575;
+    border-radius: 50%;
+    opacity: 0.7;
+    height: 36px;
+    width: 35px;
+  }
+  
+  
+  
+  .nextt {
+    
+    position: absolute;
+  right: 10px;
+   cursor: pointer;
+   margin-top: -70px;
+      width: 60px;
+      border-radius: 50%;
+  
+    height: 36px;
+    width: 35px;
+    color: #fff;
+    border: none;
+    opacity: 0.7;
+    background-color: #757575;
+  }
+
+
+  
+#CTTB{
+    width: 100%;
+    height: 500px;
+    font-family: "Quicksand", sans-serif;
     float: left;
     position: relative;
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    transition: all 1s ease;
-    filter: brightness(80%);
  }
- 
- .zoomin-1:hover img {
- 
-    transform: scale(1.15);
-    filter: brightness(60%);
- 
- 
+ #CTTB img{
+    width: 100%;
+    height: 500px; 
  }
+ #CTTB-left{
+ width: 777px;
+ height: 100%;
  
- .border-zoom-1 {
-    width: 490px;
-    height: 70px;
-    border: 3px solid #a03522;
+ background-color: rgb(255, 255, 255,0.7);
+ position: absolute;
+ line-height: 25px;
+ top:0;
+ }
+ #CTTB-right{
+    width: 773px;
+    height: 100%;
     position: absolute;
-    margin: 12px 25px;
-    opacity: 0;
-    -webkit-transition: all 0.7s ease;
-    -moz-transition: all 0.7s ease;
-    -ms-transition: all 0.7s ease;
-    transition: all 0.7s ease;
- 
+    margin-left: 748px;
+    top: 0;
  
  }
- 
- .zoomin-1:hover .border-zoom-1 {
-    width: 460px;
-    height: 80px;
-    margin: 7px 43px;
-    opacity: 1;
-    transform: scale(1.2);
- 
+ #CTTB-right img{
+    width: 775px;
+    height: 100%;
  }
+ #CTTB-XT{
  
- .XCT{
-    height: 25px;
-    width: 124px;
-    border: 2px solid;
-    font-size: 12px;
-    margin: -5px 200px;
-    border-color: #8d0000;
-    border-top-right-radius: 99px;
-    border-top-left-radius: 99px;
-    border-bottom-left-radius: 99px;
-    border-bottom-right-radius: 99px;
-    font-family: "Quicksand", sans-serif;
-    position: absolute;
+    float: left;
+    width: 117px;
+    height: 34px;
+    background-color: #5A4137;
+  
  }
- 
- .XCT:hover {
-    background-color: #8d0000;
- 
- }
- 
- .XCT:hover strong {
+ #CTTB-XT strong{
     color: white;
  }
- 
- 
- 
- #gg {
-    margin: 3px 0px;
+ #CTTB-XT:hover{
+ filter: brightness(90%);
  }
  
- #ggg {
-    margin: 3px 0px;
+
+.gg-chevron-right {
+    float: left;
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs, 1));
+    width: 22px;
+    color: #caa53d;
+    height: 22px;
+    border: 2px solid transparent;
+    border-radius: 100px;
+    margin: 5px 3px;
  }
  
- #gggg {
-    margin: 3px 0px;
- }
- 
- #ggggg {
-    margin: 3px 0px;
- }
- 
- .text-zoom-3 {
-    background-color: #f1f1f1;
-    color: #a03522;
-    font-size: 23.4px;
-    margin: 180px 60px;
-    opacity: 0.8;
-    text-align: center;
-    width: 408px;
-    height: 88px;
-    line-height: 10px;
+ .gg-chevron-right::after {
+    content: "";
+    display: block;
+    box-sizing: border-box;
     position: absolute;
+    width: 8px;
+    height: 8px;
+    border-bottom: 2px solid;
+    border-right: 2px solid;
+    transform: rotate(-45deg);
+    right: 6px;
+    top: 4px
+ }
+
+
+ 
+ /*  CSS PHẦN CHỨA NỘI DUNG */
+.grid-bannerr {
+    height: 305px;
+    
+      overflow: hidden;
+      float: left;
+    
+    }
+    
+    /* CSS PHẦN SLIDE CHUYỂN DỘNG */
+    .slidess {
+      width: 500%;
+      height: 100%;
+      /* border: solid; */
+      display: flex;
+    }
+    .slidee img {
+      width: 100%;
+      height: 100%;
+    }
+    .slidess input {
+      display: none;
+    }
+    .slidee {
+      width: 20%;
+      transition: 1s;
+    }
+    .navigation-manuall {
+      position: absolute;
+      width: 130px;
+      margin-top: -20px;
+      display: flex;
+      margin-left: 205px;
+      justify-content: center;
+    }
+    .manual-btnn {
+      border: 2px solid #fff;
+      padding: 5px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 1s;
+    }
+    .manual-btnn:not(:last-child){
+      margin-right: 10px;
+    }
+    .manual-btnn:hover {
+      background: #A56D00;
+    }
+    #ra5:checked ~ .firsty {
+      margin-left: 0;
+      
+    }
+    #ra6:checked ~ .firsty {
+      margin-left: -20%;
+    }
+    
+    .navigation-autoo {
+      position: absolute;
+      display: flex;
+      width: 130px;
+      justify-content: center;
+      margin-left: 125px;
+      margin-top: 286px;
+    }
+    .navigation-autoo div {
+      border: 2px solid hsla(0,0%,53.7%,.4);
+      padding: 5px;
+      border-radius: 10px;
+      transition: 1s;
+    }
+    .navigation-autoo div:not(:last-child) {
+      margin-right: 10px;
+    }
+    #ra5:checked ~ .navigation-autoo .auto-btn11{
+      background: #A56D00;
+    }
+    #ra6:checked ~ .navigation-autoo .auto-btn22{
+      background: #A56D00;
+    }
+    
+    
+    /* .buttons {
+      display: inline-block;
+    } */
+    /* code nút button trái phải */
+    
+    .p {
+     
+     
+       margin-top: 40px;
+      height: 60px;
+      width: 35px;
+      color: #fff;
+      cursor: pointer;
+      border: none;
+      background-color: #757575;
+      border-radius: 50%;
+    margin-left: 10px;
+      height: 36px;
+      width: 35px;
+    }
+    
+    
+    
+    .n {
+       left: 1480px;
+       margin-top: 40px;
+      position: absolute;
+ 
+     cursor: pointer;
+      
+        width: 60px;
+        border-radius: 50%;
+    
+      height: 36px;
+      width: 35px;
+      color: #fff;
+      border: none;
+      opacity: 0.7;
+      background-color: #757575;
+    }
+
+
+
+    #CHVYT{
+        width: 100%;
+        height: 550px;
+       
+        float: left;
+     
+     }
+
+     #DVCLG {
+        width: 450px;
+        height: 60px;
+        margin: 20px 580px;
+        border: 0px solid;
+     }
+
+     #img-middle-1 {
+        float: left;
+        margin: -10px 680px;
+     
+     }
+
+/*  CSS PHẦN CHỨA NỘI DUNG */
+.grid-bannerrrr {
+ 
+ 
+    margin-top: 15px;
+      overflow: hidden;
+      float: left;
+    
+    }
+    
+    /* CSS PHẦN SLIDE CHUYỂN DỘNG */
+    .slidessss {
+      height: 415px;
+   
+      /* border: solid; */
+      display: flex;
+    }
+    .slideeee img {
+      width: 100%;
+      height: 270px;
+      border-top-right-radius: 8px;
+      border-top-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+      border-bottom-left-radius: 8px;
+    
+    }
+    .slidessss input {
+      display: none;
+    }
+    .slideeee {
+      width: 380px;
+      height: 415px;
+      cursor: pointer;
+      transition: 1s;
+      background-color: rgb(100,100,100);
+      border-top-right-radius: 8px;
+      border-top-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+      border-bottom-left-radius: 8px;
+      margin-left: 5px;
+    }
+    
+    
+    #raaa1:checked ~ .firsttt {
+      margin-left: 0;
+      
+    }
+    #raaa2:checked ~ .firsttt{
+      margin-left: -10.3%;
+    }
+    
+    .img-slideeee{
+      margin-top: -15px;
+      transition: 0.4s;
+    }
+    .slideeee:hover .img-slideeee{
+      margin-top:-28px;
+    
+    }
+    .xct-button{
+     
+      height: 30px;
+      width: 90px;
+      border: 2px solid rgb(180, 178, 178);
+      background-color: rgb(100,100,100);
+    color: white;
+    opacity: 0.8;
+    cursor: pointer;
+      font-size: 11px;
+      margin: -8px 130px;
+      float: left;
+      font-family: "Quicksand", sans-serif;
+    transition: 0.7s;
+    }
+    .xct-button:hover{
+      background-color: #5a4137;
+      border: #5a4137;
+    }
+    /* .buttons {
+      display: inline-block;
+    } */
+    /* code nút button trái phải */
+    
+    .prevvv {
+     
+      position: absolute;
+  margin-top: -270px;
+  margin-left: 10px;
+      height: 60px;
+      width: 35px;
+      color: #fff;
+      cursor: pointer;
+      border: none;
+      background-color: #757575;
+      border-radius: 50%;
+    
+      height: 36px;
+      width: 35px;
+    }
+    
+    
+    
+    .nexttt {
+       margin-top: -260px;
+      position: absolute;
+    right: 10px;
+     cursor: pointer;
+    
+        width: 60px;
+        border-radius: 50%;
+    
+      height: 36px;
+      width: 35px;
+      color: #fff;
+      border: none;
+      opacity: 0.7;
+      background-color: #757575;
+    }
+    
+
+    
+#TACNTT{
+    width: 100%;
+    height: 423px;
+   float: left;
+   font-family: "Quicksand", sans-serif;
+    position: relative;
+ }
+ 
+ 
+ #TACNTT-TX{
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.68);
+    width: 100%;
+    height: 423px;
+  
+    font-family: "Quicksand", sans-serif;
+ }
+ 
+ #TACNTT-TX-tx{
+ margin: 50px 300px;
+    float: left;
+    width: 950px;
+    height: 250px;
+    line-height: 40px;
+    font-family: "Quicksand", sans-serif;
+ }
+ #LHTV-1{
+    height: 33px;
+    width: 189px;
+   background-color: #810303;
+    border: 2px solid;
+    font-size: 16px;
+    margin: 0px 650px;
+    border-color: #8d0000;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     font-family: "Quicksand", sans-serif;
  
+    float: left;
  }
  
- .content-2 {
-    height: 448px;
-    width: 534px;
-    overflow: hidden;
-    float: left;
-    position: relative;
-    margin: 10px 10px;
- }
- 
- .zoomin-2 img {
-    height: 448px;
-    width: 534px;
-    float: left;
-    position: relative;
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    transition: all 1s ease;
+ #LHTV-1:hover {
+  
     filter: brightness(80%);
  }
  
- .zoomin-2:hover img {
- 
-    transform: scale(1.15);
-    filter: brightness(60%);
  
  
- }
  
- .border-zoom-2 {
-    width: 350px;
-    height: 60px;
-    border: 3px solid #a03522;
-    position: absolute;
-    margin: 12px 25px;
-    opacity: 0;
-    -webkit-transition: all 0.7s ease;
-    -moz-transition: all 0.7s ease;
-    -ms-transition: all 0.7s ease;
-    transition: all 0.7s ease;
- }
  
- .zoomin-2:hover .border-zoom-2 {
-    width: 338px;
-    height: 70px;
-    margin: 7px 34px;
-    opacity: 1;
-    transform: scale(1.2);
- 
- }

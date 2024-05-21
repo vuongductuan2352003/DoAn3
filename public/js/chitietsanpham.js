@@ -65,3 +65,7 @@ function stickyMenu() {
     }
 }
 
+window.addEventListener('load', function () {
+  // Xóa tất cả các thông báo Toastr khi trang được tải lại
+  toastr.clear();
+});

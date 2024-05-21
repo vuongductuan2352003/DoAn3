@@ -24,10 +24,11 @@
                 </div>
                 <p style="color:#7a9c59">Còn hàng</p>
             
-                <form id="addToCartForm"  action="{{ url('/Gio-Hang/'.$chiTietSanPham->MaSanPham) }}"  method="post">
-                                            @csrf
-                                            <button class="tgh" style="float:left;">Thêm vào giỏ</button>
-                                        </form>
+                <form id="addToCartForm" action="{{ route('giohang.add', ['id' => $chiTietSanPham->MaSanPham]) }}" method="post">
+    @csrf
+    <button class="tgh" style="float:left;">Thêm vào giỏ</button>
+</form>
+
                 <div style="clear: both;color:#334862;font-size:18px;margin-top:10px;float:left">
                     <p>Add to wishlist</p>
                 </div>

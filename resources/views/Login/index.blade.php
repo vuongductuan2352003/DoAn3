@@ -23,16 +23,16 @@
         <div id="login-1">
             <h2  >LOGIN</h2>
         </div>
-<form action="" >
+<form action="{{ route('loginn') }}" method="POST">
     @csrf
     <div id="login-2">
 
             <div class="email">
-                <label for="email">Địa chỉ email</label>
-                <input type="text" id="username" name="username" required>
+                <label for="email">Email Address</label>
+                <input type="text" id="username" name="email" required>
             </div>
             <div class="password">
-                <label for="password">Mật khẩu</label>
+                <label for="password">Password</label>
                 <div style="display: flex;">
                     <input type="password" id="password" name="password" style="width: 300px" required>
                     <input style="width: 20px;" type="checkbox" id="showPassword">
@@ -41,9 +41,9 @@
             </div>
 
 
-            <button class="login" onclick="login()" type="button"> Login </button>
+            <button class="login"  type="submit"> Login </button>
             <div class="register">
-    Bạn mới đến Đồ Gỗ Vương Tuấn?<a href=""> Đăng Ký! </a>
+    Bạn mới đến Đồ Gỗ Vương Tuấn?<a href="{{ route('register') }}"> Đăng Ký! </a>
 </div>
         </div>
 </form>

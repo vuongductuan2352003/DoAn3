@@ -21,6 +21,6 @@ class DanhMuc extends Model
     // Định nghĩa mối quan hệ với bảng SanPham
     public function sanphams()
     {
-        return $this->hasMany(SanPham::class, 'MaDanhMuc', 'MaDanhMuc');
+        return $this->belongsTo(SanPham::class, 'MaDanhMuc', 'MaDanhMuc');
     }
 }

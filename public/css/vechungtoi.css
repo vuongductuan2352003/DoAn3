@@ -1,0 +1,264 @@
+/* Định nghĩa keyframes cho việc xoay */
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.gt{
+    width: 100%;
+    height: auto;
+}
+.img-vct {
+    width: 100%;
+    position: relative;
+    height: 680px;
+}
+
+.image-container {
+    position: relative;
+}
+
+.img-gtcn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 250px;
+    /* Áp dụng animation */
+    animation: rotate 15s linear infinite;
+    margin-left: 200px;
+    margin-top: 220px;
+}
+.TuaDe{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 980px;
+    height: 250px;
+    margin-top: 220px;
+    margin-left: 410px;
+    background-color: rgba(240, 248, 255, 0.3);
+    border-top-right-radius: 99px;
+    border-bottom-right-radius: 99px;
+    clip-path: path("M 0 0 Q 100 125 0 250 L 1000 250 L 1000 0 Z");
+}
+.TuaDe span{
+    color: rgb(0, 0, 0); /* Chữ trong suốt */
+    font-size: 20px;
+    line-height: 1.5;
+    opacity: 1;
+    display: block;
+}
+
+.gt1{
+    width: 100%;
+    height: 700px;
+}
+
+.img-gt11{
+   position: relative;
+}
+.gt11{
+    top: 0;
+    left: 0;
+    z-index: 1;
+    position: absolute;
+    width: 300px;
+    height: 350px;
+    background-color: rgb(38, 42, 42);
+    border-radius: 25px;
+    margin-top: 240px;
+    margin-left: 50px;
+}
+.gt11 img{
+    width: 100%;
+    height: 320px;
+    border-top-left-radius:20px ;
+    border-top-right-radius:20px ;
+}
+.gt11 span{
+    width: 80%;
+    margin-left: 20px;
+    text-indent: 30px;
+    margin-top: 50px;
+
+   
+}
+.gt12{
+    top: 0;
+    left: 0;
+    z-index: 1;
+    position: absolute;
+    width: 300px;
+    height: 350px;
+    background-color: rgb(1, 1, 1);
+    border-radius: 25px;
+    margin-top: 240px;
+    margin-left: 420px;
+}
+.gt12 img{
+    width: 100%;
+    height: 320px;
+    border-top-left-radius:20px ;
+    border-top-right-radius:20px ;
+}
+.gt12 span{
+    width: 80%;
+    margin-left: 20px;
+    text-indent: 30px;
+    margin-top: 50px;
+
+   
+}
+.gt13{
+    top: 0;
+    left: 0;
+    z-index: 1;
+    position: absolute;
+    width: 300px;
+    height: 350px;
+    background-color: rgb(29, 30, 30);
+    border-radius: 25px;
+    margin-top: 240px;
+    margin-left: 800px;
+}
+.gt13 img{
+    width: 100%;
+    height: 320px;
+    border-top-left-radius:20px ;
+    border-top-right-radius:20px ;
+}
+.gt13 span{
+    width: 80%;
+    margin-left: 20px;
+    text-indent: 30px;
+    margin-top: 50px;
+
+   
+}
+.gt14{
+    top: 0;
+    left: 0;
+    z-index: 1;
+    position: absolute;
+    width: 300px;
+    height: 350px;
+    background-color: rgb(8, 8, 8);
+    border-radius: 25px;
+    margin-top: 240px;
+    margin-left: 1170px;
+}
+.gt14 img{
+    width: 100%;
+    height: 320px;
+    border-top-left-radius:20px ;
+    border-top-right-radius:20px ;
+}
+.gt14 span{
+    width: 80%;
+    margin-left: 20px;
+    text-indent: 30px;
+    margin-top: 50px;
+
+   
+}
+
+
+
+.img-gt1{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    margin: 50px 600px;
+}
+.gt111{
+    position: relative;
+  
+}
+.feedback span{
+    color: rgb(156, 131, 92);
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    margin-top: 180px;
+    margin-left:420px ;
+    font-size: 28px;
+}
+
+
+#XCH{
+
+    margin-left: 700px;
+       width: 140px;
+       height: 40px;
+       border:2px solid #5A4137;
+       margin-top: -70px;
+       position: absolute;
+    }
+    #XCH a{
+      margin: 10px 20px;
+       float: left;
+       color: #5A4137;
+       
+       font-family: "Quicksand", sans-serif;
+    }
+    #XCH:hover{
+       background-color: #5A4137;
+    
+    }
+    #XCH:hover a{
+     
+       color: white;
+    }
+
+
+
+
+    #main{
+        border:4px solid  #8d0000;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+       position: relative;
+       width: 99,9%;
+       height: 846px;
+    
+    }
+    #main img{
+        width: 100%;
+        height: 846px;
+      
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;;
+    
+    }
+    #text-main{
+        top: 0;
+        position: absolute;
+        width: 100%;
+        height: 846px;
+        background-color: white;
+        margin-left: 0;
+        opacity: 0.9;
+        font-family: "Quicksand", sans-serif;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        line-height: 30px;
+     
+    
+    }
+    #text-1{
+        margin: 40px 30px;
+    }
+    

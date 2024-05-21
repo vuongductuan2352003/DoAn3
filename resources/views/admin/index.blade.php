@@ -91,7 +91,7 @@
                                <div class="dropdown-menu dropdown-menu-end">
                                    <a href="#" class="dropdown-item">Profile</a>
                                    <a href="#" class="dropdown-item">Setting</a>
-                                   <a href="#" class="dropdown-item">Logout</a>
+                                   <a href="{{route('logout')}}" class="dropdown-item">Logout</a>
                                </div>
                            </li>
                        </ul>
@@ -225,7 +225,7 @@
                 <td style="width: 5%">{{ $sanPham->BaoHanh }}</td>
                 <td style="width: 10%">
                     <div>
-                        <button><i class="fa fa-wrench"></i></button>
+                        <button onclick="showEditModal('{{$sanPham->MaSanPham}}')"><i class="fa fa-wrench" > </i></button>
                         <!-- Sử dụng onclick để gọi hàm confirmDelete -->
                         <button type="button" onclick="confirmDelete('{{$sanPham->MaSanPham}}')"><i class="fa fa-trash"></i></button>
                     </div>
@@ -239,6 +239,32 @@
         </form>
     @endforeach
 </div>
+
+<!-- Modal sửa sản phẩm -->
+<div id="editModal" >
+    <form id="editForm" method="POST">
+        @csrf
+        @method('PUT')
+        <input type="hidden" id="editMaSanPham" name="MaSanPham">
+        <label for="editTenSanPham">Tên Sản Phẩm:</label>
+        <input type="text" id="editTenSanPham" name="TenSanPham" required>
+        <label for="editGia">Giá:</label>
+        <input type="text" id="editGia" name="Gia" required>
+        <label for="editSoLuong">Số Lượng:</label>
+        <input type="text" id="editSoLuong" name="SoLuong" required>
+        <label for="editNhaSanXuat">Nhà Sản Xuất:</label>
+        <input type="text" id="editNhaSanXuat" name="NhaSanXuat" required>
+        <label for="editBaoHanh">Bảo Hành:</label>
+        <input type="text" id="editBaoHanh" name="BaoHanh" required>
+        <button type="submit">Sửa</button>
+    </form>
+</div>
+
+
+
+
+
+
 
                        </div>
                    </div>

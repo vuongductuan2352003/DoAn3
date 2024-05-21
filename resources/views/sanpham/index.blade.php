@@ -389,7 +389,8 @@
         <div class="sanpham-right">
         @foreach ($sanPhams as $sanPham)
     
-            <a href="{{url('Chi-Tiet-San-Pham')}}?id={{ $sanPham->MaSanPham}}">
+            <a href="{{ route('masanpham', ['id' => $sanPham['MaSanPham']]) }}">
+          
               <div class="MAUSP">
         <div class="hover-img"><div class="heart">
                 <i style="color:#B87029;margin-top:5px; " class="fa-solid fa-heart"></i>

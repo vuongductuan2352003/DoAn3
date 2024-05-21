@@ -45,4 +45,7 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+    public function giohang(){
+        return $this->belongsTo(giohang::class,'id','id');
+    }
 }

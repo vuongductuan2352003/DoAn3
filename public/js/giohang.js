@@ -1,39 +1,46 @@
-   // JavaScript xử lý sự kiện
-   document.getElementById('btn-thanh-toan').addEventListener('click', showPaymentForm);
-   document.getElementById('btn-huy-bo').addEventListener('click', hidePaymentForm);
 
-   function showPaymentForm() {
-       var paymentForm = document.getElementById('payment-form');
-       paymentForm.style.display = 'block';
-   }
+    $(document).ready(function(){
+        $('.item-quantity .qty-increase').on('click', function(){
+            var inputElement = $(this).siblings('.qty-input');
+            var quantity = parseInt(inputElement.val());
+            inputElement.val(quantity + 1);
+            updateCartItem(inputElement);
+        });
 
-   function hidePaymentForm() {
-       var paymentForm = document.getElementById('payment-form');
-       paymentForm.style.display = 'none';
-   }
-   function decreaseQuantity(itemId) {
-    var quantityInput = document.getElementById('quantity_' + itemId);
-    var currentQuantity = parseInt(quantityInput.value);
-    if (currentQuantity > 1) {
-        quantityInput.value = currentQuantity - 1;
-        // Gọi hàm để cập nhật tổng tiền
-        updateTotal(itemId, currentQuantity - 1);
+        $('.item-quantity .qty-decrease').on('click', function(){
+            var inputElement = $(this).siblings('.qty-input');
+            var quantity = parseInt(inputElement.val());
+            if(quantity > 1) {
+                inputElement.val(quantity - 1);
+                updateCartItem(inputElement);
+            }
+        });
+
+        function updateCartItem(inputElement){
+            var quantity = inputElement.val();
+            var cartItemId = inputElement.closest('.menu-gioHang2').find('input[name="selected_items[]"]').val();
+            $.ajax({
+                url: "{{ route('cart.update') }}",
+                method: 'POST',
+                data: {
+                    _token: '{{ csrf_token() }}',
+                    cartItemId: cartItemId,
+                    quantity: quantity
+                },
+                success: function(response){
+                    // Xử lý response nếu cần
+                },
+                error: function(xhr){
+                    // Xử lý lỗi nếu cần
+                }
+            });
+        }
+    });
+
+    
+    document.getElementById('select-all').onclick = function() {
+        var checkboxes = document.querySelectorAll('input[name="selected_items[]"]');
+        for (var checkbox of checkboxes) {
+            checkbox.checked = this.checked;
+        }
     }
-}
-
-function increaseQuantity(itemId) {
-    var quantityInput = document.getElementById('quantity_' + itemId);
-    var currentQuantity = parseInt(quantityInput.value);
-    quantityInput.value = currentQuantity + 1;
-    // Gọi hàm để cập nhật tổng tiền
-    updateTotal(itemId, currentQuantity + 1);
-}
-
-function updateTotal(itemId, newQuantity) {
-    // Sử dụng AJAX hoặc gửi request để cập nhật số lượng và tổng tiền trên server
-    // Sau đó cập nhật lại giá trị tổng tiền trong giao diện
-    // Ví dụ:
-    // var totalPriceElement = document.getElementById('total_price_' + itemId);
-    // var itemPrice = parseFloat(document.getElementById('item_price_' + itemId).innerText);
-    // totalPriceElement.innerText = (itemPrice * newQuantity).toFixed(2) + ' VNĐ';
-}

@@ -30,7 +30,7 @@ class SanPham extends Model
      }
      public function giohang()
      {
-         return $this->hasOne(GioHang::class, 'MaSanPham', 'MaSanPham');
+         return $this->belongsTo(GioHang::class, 'MaSanPham', 'MaSanPham');
      }
  
 }
