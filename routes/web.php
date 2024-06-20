@@ -9,6 +9,10 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ChiTietSanPhamController;
 use App\Http\Controllers\GioHangController;
 use App\Http\Controllers\Cart;
+use App\Http\Controllers\ThanhToanController;
+use App\Http\Controllers\TinTucController;
+use App\Models\TinTuc;
+
 // use App\Http\Controllers\LoginController;
 // Route::get('/login', [LoginController::class, 'index']);
 // dangnhap
@@ -18,9 +22,14 @@ Route::get('/login', function () {
 
 Route::prefix('admin')->middleware('admin')->group(function(){
 Route::get('/admin', [AdminController::class, 'index'])->name('admin.index');
-Route::delete('/admin/{MaSanPham}', [AdminController::class, 'delete'])->name('admin.delete'); // Sử dụng DELETE method
-Route::put('/admin/{MaSanPham}', [AdminController::class, 'update'])->name('admin.update');
 
+
+Route::delete('/admin/delete-sanpham/{MaSanPham}', [AdminController::class, 'delete'])->name('admin.delete'); 
+Route::delete('/admin/delete-khachhang/{Id}', [AdminController::class, 'loai'])->name('khachhang.delete'); 
+Route::delete('/admin/delete-hoadon/{MaHoaDon}', [AdminController::class, 'xoa'])->name('hoadon.delete');
+
+Route::put('/admin/{MaSanPham}', [AdminController::class, 'update'])->name('admin.update');
+Route::patch('/admin/{MaHoaDon}', [AdminController::class, 'duyethoaDon'])->name('hoadon.duyet');
 
 
 
@@ -42,7 +51,7 @@ Route::get('/', function () {
 Route::get('/san-pham', [SanPhamController::class, 'index'])->name('sanpham');
 Route::post('/add-to-cart', [SanPhamController::class, 'addToCart'])->name('cart.add');
 // trangchu
-Route::get('/hi', [TrangChuController::class, 'index'])->name('TrangChu');
+Route::get('/', [TrangChuController::class, 'index'])->name('TrangChu');
 // quantrivien
 
 
@@ -53,7 +62,7 @@ Route::get('/Chi-Tiet-San-Pham/{id}', [ChiTietSanPhamController::class, 'index']
 Route::post('/Chi-Tiet-San-Pham/{id}', [ChiTietSanPhamController::class, 'addCart'])->name('giohang.add');
 Route::post('/Gio-Hang', 'Cart@updateCart')->name('update-cart');
 Route::post('/Gio-Hang/update', 'Cart@update')->name('cart.update');
-
+Route::post('/Gio-Hang/update', [Cart::class, 'update'])->name('cart.update');
 Route::post('/Gio-Hang/bulkRemove', [Cart::class, 'bulkRemove'])->name('giohang.bulkRemove');
 
 
@@ -65,7 +74,8 @@ Route::get('/Gio-Hang', [Cart::class, 'index'])->name('GioHang.index');
 // Route::post('/Gio-Hang/{id}', [GioHangController::class, 'addToCart'])->name('giohang.add');
 // Route::post('/Gio-Hang/remove-item/{rowId}', [GioHangController::class, 'removeItem'])->name('giohang.remove');
 // Route::post('/Gio-Hang/update/{rowId}', [GioHangController::class, 'updateQuantity'])->name('giohang.update');
-
+//TinTuc
+Route::get('/Tin-Tuc', [TinTucController::class, 'index'])->name('TinTuc.index');
 
 // lienhe
 Route::get('/lien-he', function () {
@@ -75,6 +85,12 @@ Route::get('/lien-he', function () {
 Route::get('/ve-chung-toi', function () {
     return view('VeChungToi.index');
 });
-Route::get('/Tin-Tuc', function () {
-    return view('TinTuc.index');
-});
+//thanh toan
+
+
+Route::get('/Thanh-Toan', [ThanhToanController::class, 'show'])->name('thanhtoan.show');
+Route::post('/Thanh-Toan', [ThanhToanController::class, 'store'])->name('thanhtoan.store');
+
+
+
+//test mai

@@ -35,7 +35,7 @@
                     <div class="title">NỘI THẤT </div>
                     <div class="topic">PHÒNG KHÁCH </div>
                     <div class="des" style="margin-top:-10px;width:700px;font-size:23px; background-color: rgba(255,255,255,0.7);
- color:#363636; border-radius: 10px;line-height:30px">
+            color:#363636; border-radius: 10px;line-height:30px">
                         Nội thất phòng khách chất liệu gỗ của chúng tôi mang đến không gian ấm cúng và sang trọng. Sự kết hợp tinh tế giữa các loại gỗ tự nhiên và thiết kế độc đáo tạo nên những chiếc sofa, bàn trà và kệ trang trí vô cùng ấn tượng. Bạn sẽ tận hưởng không gian thoải mái và đẳng cấp trong từng chi tiết, là sự hòa quyện hoàn hảo giữa nét truyền thống và hiện đại. </div>
                     <div class="buttons">
                         <button>XEM THÊM</button>
@@ -53,7 +53,7 @@
                     <div class="title">NỘI THẤT </div>
                     <div class="topic">PHÒNG NGỦ </div>
                     <div class="des" style="margin-top:-10px;width:700px;font-size:23px; background-color: rgba(255,255,255,0.7);
- color:#363636; border-radius: 10px;line-height:30px">
+         color:#363636; border-radius: 10px;line-height:30px">
                         Nội thất phòng ngủ chất liệu gỗ của chúng tôi kết hợp vẻ đẹp tự nhiên của gỗ cao cấp với thiết kế hiện đại. Bộ sản phẩm bao gồm giường ngủ, tủ quần áo và bàn trang điểm, tạo nên không gian ấm cúng và sang trọng trong phòng ngủ của bạn. Sự tinh tế trong chi tiết và chất lượng bền bỉ là ưu điểm nổi bật của nội thất phòng ngủ chúng tôi.
 
 
@@ -76,7 +76,7 @@
                     <div class="title">NỘI THẤT </div>
                     <div class="topic">PHÒNG TRẺ EM</div>
                     <div class="des" style="margin-top:-10px;width:700px;font-size:23px; background-color: rgba(255,255,255,0.7);
- color:#363636; border-radius: 10px;line-height:30px;">
+            color:#363636; border-radius: 10px;line-height:30px;">
 
                         Nội thất trẻ em chất liệu gỗ của chúng tôi được thiết kế ngắn gọn và an toàn, tạo không gian phòng ngủ thoải mái và thân thiện với trẻ. Sử dụng gỗ tự nhiên, sản phẩm của chúng tôi đảm bảo chất lượng và an toàn, với thiết kế chuyên nghiệp và chi tiết bo tròn để bảo vệ trẻ nhỏ.
                     </div>
@@ -96,7 +96,7 @@
                     <div class="title">NỘI THẤT </div>
                     <div class="topic">VĂN PHÒNG</div>
                     <div class="des" style="margin-top:-10px;width:700px;font-size:23px; background-color: rgba(255,255,255,0.7);
- color:#363636; border-radius: 10px;line-height:30px">
+            color:#363636; border-radius: 10px;line-height:30px">
 
                         Nội thất văn phòng chất liệu gỗ của chúng tôi: đẹp, ấm áp, và chức năng. Thiết kế đơn giản nhưng sang trọng, kết hợp với chất liệu gỗ tự nhiên chọn lọc. Bàn làm việc và kệ sách thông thoáng, tối ưu hóa không gian làm việc. Sự linh hoạt và tiện ích là ưu tiên hàng đầu, mang lại không gian làm việc thoải mái và hiệu quả.</div>
                     <div class="buttons">
@@ -357,595 +357,571 @@
         </div>
     </section>
     <section id="SPCHINH">
-                <div>
-                    <ul>
-                        <li id="block1" style="width:84px;background-color: #5A4137;"> 
-                                <span>TẤT CẢ</span>
-    
-                        </li>
-                        <li id="block2"> 
-                                <span>NỘI THẤT PHÒNG KHÁCH</span>
+        <div>
+            <ul>
+                <li id="block1" style="width:84px;background-color: #5A4137;">
+                    <span>TẤT CẢ</span>
 
-                          
-                        </li>
-                        <li id="block3"> <span>NỘI THẤT PHÒNG NGỦ</span></li>
-                        <li id="block4"> <span> NỘI THẤT PHÒNG BẾP</span> </li>
-                    </ul>
-                   
-                </div>
-                <div id="KHUNG-SP">
-                    <div class="MAUSP">
-                  
-                      <div class="img">
-                          <a href="/BaiTapLon/Chi_Tiet_SP/Chi_Tiet_SP.html">
-                            <img src="https://dogolegia.vn/wp-content/uploads/2022/09/x-mau-giuong-ngu-dep-hien-dai-go-cong-nghiep-LG-GN262-1024x855.jpg"
-                              alt="">
-                          </a>
-                      
-                       <div class="heart">
-                          <i style="color:#B87029;margin-top:8px" class="fa-solid fa-heart"></i>
-                      </div>
-                      </div>
-                  
-                     
-                     
-                  <div id="textttt">
-                      <p><a href="/BaiTapLon/Chi_Tiet_SP/Chi_Tiet_SP.html">MẪU GIƯỜNG NGỦ HIỆN ĐẠI LG-GN262</a></p>
-                      <strong style="font-size: 23px;color:#BD1003">6.900.000<span>₫</span></strong>
-                      <p style="font-size: 12.5px;opacity: 0.8;">
-                          Nhà sản xuất: ĐỒ GỖ LÊ GIA
-                          Bảo hành: 24 tháng </p>
-                  </div>
-                  </div>
-                  <div class="MAUSP">
-                  
-                    <div class="img">
-                        <a href="/BaiTapLon/Chi_Tiet_SP/Chi_Tiet_SP.html">
-                          <img src="https://dogolegia.vn/wp-content/uploads/2022/09/noi-that-phong-ngu-dep-hien-dai-cao-cap-LG-BPN569-1.jpg"
-                            alt="">
-                        </a>
-                    
-                     <div class="heart">
+                </li>
+                <li id="block2">
+                    <span>NỘI THẤT PHÒNG KHÁCH</span>
+
+
+                </li>
+                <li id="block3"> <span>NỘI THẤT PHÒNG NGỦ</span></li>
+                <li id="block4"> <span> NỘI THẤT PHÒNG BẾP</span> </li>
+            </ul>
+
+        </div>
+        <div id="KHUNG-SP">
+            <div class="MAUSP">
+
+                <div class="img">
+                    <a href="/BaiTapLon/Chi_Tiet_SP/Chi_Tiet_SP.html">
+                        <img src="https://dogolegia.vn/wp-content/uploads/2022/09/x-mau-giuong-ngu-dep-hien-dai-go-cong-nghiep-LG-GN262-1024x855.jpg" alt="">
+                    </a>
+
+                    <div class="heart">
                         <i style="color:#B87029;margin-top:8px" class="fa-solid fa-heart"></i>
                     </div>
+                </div>
+
+
+
+                <div id="textttt">
+                    <p><a href="/BaiTapLon/Chi_Tiet_SP/Chi_Tiet_SP.html">MẪU GIƯỜNG NGỦ HIỆN ĐẠI LG-GN262</a></p>
+                    <strong style="font-size: 23px;color:#BD1003">6.900.000<span>₫</span></strong>
+                    <p style="font-size: 12.5px;opacity: 0.8;">
+                        Nhà sản xuất: ĐỒ GỖ LÊ GIA
+                        Bảo hành: 24 tháng </p>
+                </div>
+            </div>
+            <div class="MAUSP">
+
+                <div class="img">
+                    <a href="/BaiTapLon/Chi_Tiet_SP/Chi_Tiet_SP.html">
+                        <img src="https://dogolegia.vn/wp-content/uploads/2022/09/noi-that-phong-ngu-dep-hien-dai-cao-cap-LG-BPN569-1.jpg" alt="">
+                    </a>
+
+                    <div class="heart">
+                        <i style="color:#B87029;margin-top:8px" class="fa-solid fa-heart"></i>
                     </div>
-                  
-                   
-                   
-                  <div id="textttt">
+                </div>
+
+
+
+                <div id="textttt">
                     <p><a href="/BaiTapLon/Chi_Tiet_SP/Chi_Tiet_SP.html">MẪU THIẾT KẾ PHÒNG NGỦ 15M2 ĐẸP LG-BPN569</a></p>
                     <strong style="font-size: 23px;color:#BD1003">36.255.563<span>₫</span></strong>
                     <p style="font-size: 12.5px;opacity: 0.8;">
                         Nhà sản xuất: ĐỒ GỖ LÊ GIA
                         Bảo hành: 24 tháng </p>
-                  </div>
-                  </div>
-                  <div class="MAUSP">
-                  
-                    <div class="img">
-                        <a href="/BaiTapLon/Chi_Tiet_SP/Chi_Tiet_SP.html">
-                          <img src="https://dogolegia.vn/wp-content/uploads/2022/09/thiet-ke-noi-that-phong-ngu-tre-em-dep-hien-dai-LG-PTE221-1-scaled-1-2048x1366.jpg"
-                            alt="">
-                        </a>
-                    
-                     <div class="heart">
+                </div>
+            </div>
+            <div class="MAUSP">
+
+                <div class="img">
+                    <a href="/BaiTapLon/Chi_Tiet_SP/Chi_Tiet_SP.html">
+                        <img src="https://dogolegia.vn/wp-content/uploads/2022/09/thiet-ke-noi-that-phong-ngu-tre-em-dep-hien-dai-LG-PTE221-1-scaled-1-2048x1366.jpg" alt="">
+                    </a>
+
+                    <div class="heart">
                         <i style="color:#B87029;margin-top:8px" class="fa-solid fa-heart"></i>
                     </div>
-                    </div>
-                  
-                   
-                   
-                  <div id="textttt">
+                </div>
+
+
+
+                <div id="textttt">
                     <p><a href="/BaiTapLon/Chi_Tiet_SP/Chi_Tiet_SP.html">MẪU PHÒNG NGỦ TRẺ EM LG-PTE221</a></p>
                     <strong style="font-size: 23px;color:#BD1003">22.954.300<span>₫</span></strong>
                     <p style="font-size: 12.5px;opacity: 0.8;">
                         Nhà sản xuất: ĐỒ GỖ LÊ GIA
                         Bảo hành: 24 tháng </p>
-                  </div>
-                  </div>
-                  <div class="MAUSP">
-                  
-                    <div class="img">
-                        <a href="/BaiTapLon/Chi_Tiet_SP/Chi_Tiet_SP.html">
-                          <img src="https://dogolegia.vn/wp-content/uploads/2022/09/mau-sofa-da-ni-vang-phong-khach-dep-hien-dai-ha-noi-sf304-1.jpg"
-                            alt="">
-                        </a>
-                    
-                     <div class="heart">
+                </div>
+            </div>
+            <div class="MAUSP">
+
+                <div class="img">
+                    <a href="/BaiTapLon/Chi_Tiet_SP/Chi_Tiet_SP.html">
+                        <img src="https://dogolegia.vn/wp-content/uploads/2022/09/mau-sofa-da-ni-vang-phong-khach-dep-hien-dai-ha-noi-sf304-1.jpg" alt="">
+                    </a>
+
+                    <div class="heart">
                         <i style="color:#B87029;margin-top:8px" class="fa-solid fa-heart"></i>
                     </div>
-                    </div>
-                  
-                   
-                   
-                  <div id="textttt">
+                </div>
+
+
+
+                <div id="textttt">
                     <p><a href="/BaiTapLon/Chi_Tiet_SP/Chi_Tiet_SP.html">MẪU SOFA VĂNG PHÒNG KHÁCH ĐẸP LG-SF304</a></p>
                     <strong style="font-size: 23px;color:#BD1003">37.200.000<span>₫</span></strong>
                     <p style="font-size: 12.5px;opacity: 0.8;">
                         Nhà sản xuất: ĐỒ GỖ LÊ GIA
                         Bảo hành: 24 tháng </p>
-                  </div>
-                  </div>
-                  <div class="MAUSP">
-                  
-                    <div class="img">
-                        <a href="/BaiTapLon/Chi_Tiet_SP/Chi_Tiet_SP.html">
-                          <img src="https://dogolegia.vn/wp-content/uploads/2022/09/x-mau-giuong-ngu-dep-hien-dai-go-cong-nghiep-LG-GN260.jpg"
-                            alt="">
-                        </a>
-                    
-                     <div class="heart">
+                </div>
+            </div>
+            <div class="MAUSP">
+
+                <div class="img">
+                    <a href="/BaiTapLon/Chi_Tiet_SP/Chi_Tiet_SP.html">
+                        <img src="https://dogolegia.vn/wp-content/uploads/2022/09/x-mau-giuong-ngu-dep-hien-dai-go-cong-nghiep-LG-GN260.jpg" alt="">
+                    </a>
+
+                    <div class="heart">
                         <i style="color:#B87029;margin-top:8px" class="fa-solid fa-heart"></i>
                     </div>
-                    </div>
-                  
-                   
-                   
-                  <div id="textttt">
+                </div>
+
+
+
+                <div id="textttt">
                     <p><a href="/BaiTapLon/Chi_Tiet_SP/Chi_Tiet_SP.html">MẪU GIƯỜNG NGỦ HIỆN ĐẠI LG-GN260</a></p>
                     <strong style="font-size: 23px;color:#BD1003">11.856.000<span>₫</span></strong>
                     <p style="font-size: 12.5px;opacity: 0.8;">
                         Nhà sản xuất: ĐỒ GỖ LÊ GIA
                         Bảo hành: 24 tháng </p>
-                  </div>
-                  </div>
-                  <div class="MAUSP">
-                  
-                    <div class="img">
-                        <a href="/BaiTapLon/Chi_Tiet_SP/Chi_Tiet_SP.html">
-                          <img src="https://dogolegia.vn/wp-content/uploads/2022/09/Hinh-anh-giao-hang-sofa-go-cao-cap-hien-dai-go-soi-go-oc-cho-dogolegia-976.jpg"
-                            alt="">
-                        </a>
-                    
-                     <div class="heart">
+                </div>
+            </div>
+            <div class="MAUSP">
+
+                <div class="img">
+                    <a href="/BaiTapLon/Chi_Tiet_SP/Chi_Tiet_SP.html">
+                        <img src="https://dogolegia.vn/wp-content/uploads/2022/09/Hinh-anh-giao-hang-sofa-go-cao-cap-hien-dai-go-soi-go-oc-cho-dogolegia-976.jpg" alt="">
+                    </a>
+
+                    <div class="heart">
                         <i style="color:#B87029;margin-top:8px" class="fa-solid fa-heart"></i>
                     </div>
-                    </div>
-                  
-                   
-                   
-                  <div id="textttt">
+                </div>
+
+
+
+                <div id="textttt">
                     <p><a href="/BaiTapLon/Chi_Tiet_SP/Chi_Tiet_SP.html">MẪU SOFA GỖ HIỆN ĐẠI LG-SG241 (BÀY MẪU)</a></p>
                     <strong style="font-size: 23px;color:#BD1003">37.800.000<span>₫</span></strong>
                     <p style="font-size: 12.5px;opacity: 0.8;">
                         Nhà sản xuất: ĐỒ GỖ LÊ GIA
                         Bảo hành: 24 tháng </p>
-                  </div>
-                  </div>
-               
-                  </div>
-                  <div id="KHUNG-SPP">
-                    <div class="MAUSP">
-                  
-                      <div class="img">
-                          <a href="/BaiTapLon/Chi_Tiet_SP/Chi_Tiet_SP.html">
-                            <img src="https://dogolegia.vn/wp-content/uploads/2022/09/mau-sofa-go-hien-dai-cao-cap-phong-khach-SG215-2.jpg"
-                              alt="">
-                          </a>
-                      
-                       <div class="heart">
-                          <i style="color:#B87029;margin-top:8px" class="fa-solid fa-heart"></i>
-                      </div>
-                      </div>
-                  
-                     
-                     
-                  <div id="textttt">
-                      <p><a href="/BaiTapLon/Chi_Tiet_SP/Chi_Tiet_SP.html">MẪU SOFA GỖ CAO CẤP LG-SG215</a></p>
-                      <strong style="font-size: 23px;color:#BD1003">29.000.000<span>₫</span></strong>
-                      <p style="font-size: 12.5px;opacity: 0.8;">
-                          Nhà sản xuất: ĐỒ GỖ LÊ GIA
-                          Bảo hành: 24 tháng </p>
-                  </div>
-                  </div>
-                  <div class="MAUSP">
-                  
-                    <div class="img">
-                        <a href="/BaiTapLon/Chi_Tiet_SP/Chi_Tiet_SP.html">
-                          <img src="https://dogolegia.vn/wp-content/uploads/2023/05/0.-mau-sofa-go-dep-cho-phong-khach-an-tuong-go-soi-LG-SG245-2.jpg"
-                            alt="">
-                        </a>
-                    
-                     <div class="heart">
+                </div>
+            </div>
+
+        </div>
+        <div id="KHUNG-SPP">
+            <div class="MAUSP">
+
+                <div class="img">
+                    <a href="/BaiTapLon/Chi_Tiet_SP/Chi_Tiet_SP.html">
+                        <img src="https://dogolegia.vn/wp-content/uploads/2022/09/mau-sofa-go-hien-dai-cao-cap-phong-khach-SG215-2.jpg" alt="">
+                    </a>
+
+                    <div class="heart">
                         <i style="color:#B87029;margin-top:8px" class="fa-solid fa-heart"></i>
                     </div>
+                </div>
+
+
+
+                <div id="textttt">
+                    <p><a href="/BaiTapLon/Chi_Tiet_SP/Chi_Tiet_SP.html">MẪU SOFA GỖ CAO CẤP LG-SG215</a></p>
+                    <strong style="font-size: 23px;color:#BD1003">29.000.000<span>₫</span></strong>
+                    <p style="font-size: 12.5px;opacity: 0.8;">
+                        Nhà sản xuất: ĐỒ GỖ LÊ GIA
+                        Bảo hành: 24 tháng </p>
+                </div>
+            </div>
+            <div class="MAUSP">
+
+                <div class="img">
+                    <a href="/BaiTapLon/Chi_Tiet_SP/Chi_Tiet_SP.html">
+                        <img src="https://dogolegia.vn/wp-content/uploads/2023/05/0.-mau-sofa-go-dep-cho-phong-khach-an-tuong-go-soi-LG-SG245-2.jpg" alt="">
+                    </a>
+
+                    <div class="heart">
+                        <i style="color:#B87029;margin-top:8px" class="fa-solid fa-heart"></i>
                     </div>
-                  
-                   
-                   
-                  <div id="textttt">
+                </div>
+
+
+
+                <div id="textttt">
                     <p><a href="/BaiTapLon/Chi_Tiet_SP/Chi_Tiet_SP.html">KIỆT TÁC SOFA GỖ PHÒNG KHÁCH HIỆN ĐẠI LG-SG245</a></p>
                     <strong style="font-size: 23px;color:#BD1003">43.500.000<span>₫</span></strong>
                     <p style="font-size: 12.5px;opacity: 0.8;">
                         Nhà sản xuất: ĐỒ GỖ LÊ GIA
                         Bảo hành: 24 tháng </p>
-                  </div>
-                  </div>
-                  <div class="MAUSP">
-                  
-                    <div class="img">
-                        <a href="/BaiTapLon/Chi_Tiet_SP/Chi_Tiet_SP.html">
-                          <img src="https://dogolegia.vn/wp-content/uploads/2022/09/mau-sofa-go-hien-dai-dep-cao-cap-phong-khach-SG238-3-1024x689.jpg"
-                            alt="">
-                        </a>
-                    
-                     <div class="heart">
+                </div>
+            </div>
+            <div class="MAUSP">
+
+                <div class="img">
+                    <a href="/BaiTapLon/Chi_Tiet_SP/Chi_Tiet_SP.html">
+                        <img src="https://dogolegia.vn/wp-content/uploads/2022/09/mau-sofa-go-hien-dai-dep-cao-cap-phong-khach-SG238-3-1024x689.jpg" alt="">
+                    </a>
+
+                    <div class="heart">
                         <i style="color:#B87029;margin-top:8px" class="fa-solid fa-heart"></i>
                     </div>
-                    </div>
-                  
-                   
-                   
-                  <div id="textttt">
+                </div>
+
+
+
+                <div id="textttt">
                     <p><a href="/BaiTapLon/Chi_Tiet_SP/Chi_Tiet_SP.html">MẪU SOFA GỖ HIỆN ĐẠI LG-SG238</a></p>
                     <strong style="font-size: 23px;color:#BD1003">33.800.000<span>₫</span></strong>
                     <p style="font-size: 12.5px;opacity: 0.8;">
                         Nhà sản xuất: ĐỒ GỖ LÊ GIA
                         Bảo hành: 24 tháng </p>
-                  </div>
-                  </div>
-                  <div class="MAUSP">
-                  
-                    <div class="img">
-                        <a href="/BaiTapLon/Chi_Tiet_SP/Chi_Tiet_SP.html">
-                          <img src="https://dogolegia.vn/wp-content/uploads/2022/09/mau-sofa-go-hien-dai-cao-cap-phong-khach-SG103-11-1.jpg"
-                            alt="">
-                        </a>
-                    
-                     <div class="heart">
+                </div>
+            </div>
+            <div class="MAUSP">
+
+                <div class="img">
+                    <a href="/BaiTapLon/Chi_Tiet_SP/Chi_Tiet_SP.html">
+                        <img src="https://dogolegia.vn/wp-content/uploads/2022/09/mau-sofa-go-hien-dai-cao-cap-phong-khach-SG103-11-1.jpg" alt="">
+                    </a>
+
+                    <div class="heart">
                         <i style="color:#B87029;margin-top:8px" class="fa-solid fa-heart"></i>
                     </div>
-                    </div>
-                  
-                   
-                   
-                  <div id="textttt">
+                </div>
+
+
+
+                <div id="textttt">
                     <p><a href="/BaiTapLon/Chi_Tiet_SP/Chi_Tiet_SP.html">MẪU SOFA GỖ HIỆN ĐẠI LG-SG140</a></p>
                     <strong style="font-size: 23px;color:#BD1003">28.500.000<span>₫</span></strong>
                     <p style="font-size: 12.5px;opacity: 0.8;">
                         Nhà sản xuất: ĐỒ GỖ LÊ GIA
                         Bảo hành: 24 tháng </p>
-                  </div>
-                  </div>
-                  <div class="MAUSP">
-                  
-                    <div class="img">
-                        <a href="/BaiTapLon/Chi_Tiet_SP/Chi_Tiet_SP.html">
-                          <img src="https://dogolegia.vn/wp-content/uploads/2022/09/mau-sofa-go-hien-dai-cao-cap-phong-khach-SG139.jpg"
-                            alt="">
-                        </a>
-                    
-                     <div class="heart">
+                </div>
+            </div>
+            <div class="MAUSP">
+
+                <div class="img">
+                    <a href="/BaiTapLon/Chi_Tiet_SP/Chi_Tiet_SP.html">
+                        <img src="https://dogolegia.vn/wp-content/uploads/2022/09/mau-sofa-go-hien-dai-cao-cap-phong-khach-SG139.jpg" alt="">
+                    </a>
+
+                    <div class="heart">
                         <i style="color:#B87029;margin-top:8px" class="fa-solid fa-heart"></i>
                     </div>
-                    </div>
-                  
-                   
-                   
-                  <div id="textttt">
+                </div>
+
+
+
+                <div id="textttt">
                     <p><a href="/BaiTapLon/Chi_Tiet_SP/Chi_Tiet_SP.html">MẪU BÀN GHẾ SOFA GỖ HIỆN ĐẠI LG-SG139</a></p>
                     <strong style="font-size: 23px;color:#BD1003">31.500.000<span>₫</span></strong>
                     <p style="font-size: 12.5px;opacity: 0.8;">
                         Nhà sản xuất: ĐỒ GỖ LÊ GIA
                         Bảo hành: 24 tháng </p>
-                  </div>
-                  </div>
-                  <div class="MAUSP">
-                  
-                    <div class="img">
-                        <a href="/BaiTapLon/Chi_Tiet_SP/Chi_Tiet_SP.html">
-                          <img src="https://dogolegia.vn/wp-content/uploads/2022/09/tong_hop_hinh_anh_sofa_go_noi_that_giao_khach_hang-27-1024x768.jpg"
-                            alt="">
-                        </a>
-                    
-                     <div class="heart">
+                </div>
+            </div>
+            <div class="MAUSP">
+
+                <div class="img">
+                    <a href="/BaiTapLon/Chi_Tiet_SP/Chi_Tiet_SP.html">
+                        <img src="https://dogolegia.vn/wp-content/uploads/2022/09/tong_hop_hinh_anh_sofa_go_noi_that_giao_khach_hang-27-1024x768.jpg" alt="">
+                    </a>
+
+                    <div class="heart">
                         <i style="color:#B87029;margin-top:8px" class="fa-solid fa-heart"></i>
                     </div>
-                    </div>
-                  
-                   
-                   
-                  <div id="textttt">
+                </div>
+
+
+
+                <div id="textttt">
                     <p><a href="/BaiTapLon/Chi_Tiet_SP/Chi_Tiet_SP.html">MẪU SOFA GỖ CAO CẤP LG-SG138</a></p>
                     <strong style="font-size: 23px;color:#BD1003">23.500.000<span>₫</span></strong>
                     <p style="font-size: 12.5px;opacity: 0.8;">
                         Nhà sản xuất: ĐỒ GỖ LÊ GIA
                         Bảo hành: 24 tháng </p>
-                  </div>
-                  </div>
-               
-                  </div>
-                  <div id="KHUNG-SPPP">
-                    <div class="MAUSP">
-                  
-                      <div class="img">
-                          <a href="/BaiTapLon/Chi_Tiet_SP/Chi_Tiet_SP.html">
-                            <img src="https://dogolegia.vn/wp-content/uploads/2022/09/mau-ban-phan-dep-hien-dai-bang-go-cong-nghiep-LG-BP055-1.jpg"
-                              alt="">
-                          </a>
-                      
-                       <div class="heart">
-                          <i style="color:#B87029;margin-top:8px" class="fa-solid fa-heart"></i>
-                      </div>
-                      </div>
-                  
-                     
-                     
-                  <div id="textttt">
-                      <p><a href="/BaiTapLon/Chi_Tiet_SP/Chi_Tiet_SP.html"><a href="https://dogolegia.vn/cua-hang/mau-ban-phan-trang-diem-dep-hien-dai-lg-bp055/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">MẪU BÀN PHẤN TRANG ĐIỂM ĐẸP HIỆN ĐẠI LG-BP055</a></a></p>
-                      <strong style="font-size: 23px;color:#BD1003">2.400.000<span>₫</span></strong>
-                      <p style="font-size: 12.5px;opacity: 0.8;">
-                          Nhà sản xuất: ĐỒ GỖ LÊ GIA
-                          Bảo hành: 24 tháng </p>
-                  </div>
-                  </div>
-                  <div class="MAUSP">
-                  
-                    <div class="img">
-                        <a href="/BaiTapLon/Chi_Tiet_SP/Chi_Tiet_SP.html">
-                          <img src="https://dogolegia.vn/wp-content/uploads/2022/09/mau-ban-phan-dep-hien-dai-bang-go-cong-nghiep-LG-BP056-1.jpg"
-                            alt="">
-                        </a>
-                    
-                     <div class="heart">
+                </div>
+            </div>
+
+        </div>
+        <div id="KHUNG-SPPP">
+            <div class="MAUSP">
+
+                <div class="img">
+                    <a href="/BaiTapLon/Chi_Tiet_SP/Chi_Tiet_SP.html">
+                        <img src="https://dogolegia.vn/wp-content/uploads/2022/09/mau-ban-phan-dep-hien-dai-bang-go-cong-nghiep-LG-BP055-1.jpg" alt="">
+                    </a>
+
+                    <div class="heart">
                         <i style="color:#B87029;margin-top:8px" class="fa-solid fa-heart"></i>
                     </div>
+                </div>
+
+
+
+                <div id="textttt">
+                    <p><a href="/BaiTapLon/Chi_Tiet_SP/Chi_Tiet_SP.html"><a href="https://dogolegia.vn/cua-hang/mau-ban-phan-trang-diem-dep-hien-dai-lg-bp055/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">MẪU BÀN PHẤN TRANG ĐIỂM ĐẸP HIỆN ĐẠI LG-BP055</a></a></p>
+                    <strong style="font-size: 23px;color:#BD1003">2.400.000<span>₫</span></strong>
+                    <p style="font-size: 12.5px;opacity: 0.8;">
+                        Nhà sản xuất: ĐỒ GỖ LÊ GIA
+                        Bảo hành: 24 tháng </p>
+                </div>
+            </div>
+            <div class="MAUSP">
+
+                <div class="img">
+                    <a href="/BaiTapLon/Chi_Tiet_SP/Chi_Tiet_SP.html">
+                        <img src="https://dogolegia.vn/wp-content/uploads/2022/09/mau-ban-phan-dep-hien-dai-bang-go-cong-nghiep-LG-BP056-1.jpg" alt="">
+                    </a>
+
+                    <div class="heart">
+                        <i style="color:#B87029;margin-top:8px" class="fa-solid fa-heart"></i>
                     </div>
-                  
-                   
-                   
-                  <div id="textttt">
+                </div>
+
+
+
+                <div id="textttt">
                     <p><a href="/BaiTapLon/Chi_Tiet_SP/Chi_Tiet_SP.html">MẪU BÀN PHẤN TRANG ĐIỂM ĐẸP HIỆN ĐẠI LG-BP056</a></p>
                     <strong style="font-size: 23px;color:#BD1003">3.600.000<span>₫</span></strong>
                     <p style="font-size: 12.5px;opacity: 0.8;">
                         Nhà sản xuất: ĐỒ GỖ LÊ GIA
                         Bảo hành: 24 tháng </p>
-                  </div>
-                  </div>
-                  <div class="MAUSP">
-                  
-                    <div class="img">
-                        <a href="/BaiTapLon/Chi_Tiet_SP/Chi_Tiet_SP.html">
-                          <img src="https://dogolegia.vn/wp-content/uploads/2022/09/mau-ban-phan-dep-hien-dai-bang-go-cong-nghiep-LG-BP057-2.jpg"
-                            alt="">
-                        </a>
-                    
-                     <div class="heart">
+                </div>
+            </div>
+            <div class="MAUSP">
+
+                <div class="img">
+                    <a href="/BaiTapLon/Chi_Tiet_SP/Chi_Tiet_SP.html">
+                        <img src="https://dogolegia.vn/wp-content/uploads/2022/09/mau-ban-phan-dep-hien-dai-bang-go-cong-nghiep-LG-BP057-2.jpg" alt="">
+                    </a>
+
+                    <div class="heart">
                         <i style="color:#B87029;margin-top:8px" class="fa-solid fa-heart"></i>
                     </div>
-                    </div>
-                  
-                   
-                   
-                  <div id="textttt">
+                </div>
+
+
+
+                <div id="textttt">
                     <p><a href="/BaiTapLon/Chi_Tiet_SP/Chi_Tiet_SP.html">MẪU BÀN PHẤN TRANG ĐIỂM ĐẸP HIỆN ĐẠI LG-BP057</a></p>
                     <strong style="font-size: 23px;color:#BD1003">4.200.000<span>₫</span></strong>
                     <p style="font-size: 12.5px;opacity: 0.8;">
                         Nhà sản xuất: ĐỒ GỖ LÊ GIA
                         Bảo hành: 24 tháng </p>
-                  </div>
-                  </div>
-                  <div class="MAUSP">
-                  
-                    <div class="img">
-                        <a href="/BaiTapLon/Chi_Tiet_SP/Chi_Tiet_SP.html">
-                          <img src="https://dogolegia.vn/wp-content/uploads/2022/09/mau-sofa-go-hien-dai-cao-cap-phong-khach-SG103-11-1.jpg"
-                            alt="">
-                        </a>
-                    
-                     <div class="heart">
+                </div>
+            </div>
+            <div class="MAUSP">
+
+                <div class="img">
+                    <a href="/BaiTapLon/Chi_Tiet_SP/Chi_Tiet_SP.html">
+                        <img src="https://dogolegia.vn/wp-content/uploads/2022/09/mau-sofa-go-hien-dai-cao-cap-phong-khach-SG103-11-1.jpg" alt="">
+                    </a>
+
+                    <div class="heart">
                         <i style="color:#B87029;margin-top:8px" class="fa-solid fa-heart"></i>
                     </div>
-                    </div>
-                  
-                   
-                   
-                  <div id="textttt">
+                </div>
+
+
+
+                <div id="textttt">
                     <p><a href="/BaiTapLon/Chi_Tiet_SP/Chi_Tiet_SP.html">MẪU SOFA GỖ HIỆN ĐẠI LG-SG140</a></p>
                     <strong style="font-size: 23px;color:#BD1003">28.500.000<span>₫</span></strong>
                     <p style="font-size: 12.5px;opacity: 0.8;">
                         Nhà sản xuất: ĐỒ GỖ LÊ GIA
                         Bảo hành: 24 tháng </p>
-                  </div>
-                  </div>
-                  <div class="MAUSP">
-                  
-                    <div class="img">
-                        <a href="/BaiTapLon/Chi_Tiet_SP/Chi_Tiet_SP.html">
-                          <img src="https://dogolegia.vn/wp-content/uploads/2022/09/mau-sofa-go-hien-dai-cao-cap-phong-khach-SG139.jpg"
-                            alt="">
-                        </a>
-                    
-                     <div class="heart">
+                </div>
+            </div>
+            <div class="MAUSP">
+
+                <div class="img">
+                    <a href="/BaiTapLon/Chi_Tiet_SP/Chi_Tiet_SP.html">
+                        <img src="https://dogolegia.vn/wp-content/uploads/2022/09/mau-sofa-go-hien-dai-cao-cap-phong-khach-SG139.jpg" alt="">
+                    </a>
+
+                    <div class="heart">
                         <i style="color:#B87029;margin-top:8px" class="fa-solid fa-heart"></i>
                     </div>
-                    </div>
-                  
-                   
-                   
-                  <div id="textttt">
+                </div>
+
+
+
+                <div id="textttt">
                     <p><a href="/BaiTapLon/Chi_Tiet_SP/Chi_Tiet_SP.html">MẪU BÀN GHẾ SOFA GỖ HIỆN ĐẠI LG-SG139</a></p>
                     <strong style="font-size: 23px;color:#BD1003">31.500.000<span>₫</span></strong>
                     <p style="font-size: 12.5px;opacity: 0.8;">
                         Nhà sản xuất: ĐỒ GỖ LÊ GIA
                         Bảo hành: 24 tháng </p>
-                  </div>
-                  </div>
-                  <div class="MAUSP">
-                  
-                    <div class="img">
-                        <a href="/BaiTapLon/Chi_Tiet_SP/Chi_Tiet_SP.html">
-                          <img src="https://dogolegia.vn/wp-content/uploads/2022/09/tong_hop_hinh_anh_sofa_go_noi_that_giao_khach_hang-27-1024x768.jpg"
-                            alt="">
-                        </a>
-                    
-                     <div class="heart">
+                </div>
+            </div>
+            <div class="MAUSP">
+
+                <div class="img">
+                    <a href="/BaiTapLon/Chi_Tiet_SP/Chi_Tiet_SP.html">
+                        <img src="https://dogolegia.vn/wp-content/uploads/2022/09/tong_hop_hinh_anh_sofa_go_noi_that_giao_khach_hang-27-1024x768.jpg" alt="">
+                    </a>
+
+                    <div class="heart">
                         <i style="color:#B87029;margin-top:8px" class="fa-solid fa-heart"></i>
                     </div>
-                    </div>
-                  
-                   
-                   
-                  <div id="textttt">
+                </div>
+
+
+
+                <div id="textttt">
                     <p><a href="/BaiTapLon/Chi_Tiet_SP/Chi_Tiet_SP.html">MẪU SOFA GỖ CAO CẤP LG-SG138</a></p>
                     <strong style="font-size: 23px;color:#BD1003">23.500.000<span>₫</span></strong>
                     <p style="font-size: 12.5px;opacity: 0.8;">
                         Nhà sản xuất: ĐỒ GỖ LÊ GIA
                         Bảo hành: 24 tháng </p>
-                  </div>
-                  </div>
-               
-                  </div>
-                  <div id="KHUNG-SPPPP">
-                    <div class="MAUSP">
-                  
-                      <div class="img">
-                          <a href="/BaiTapLon/Chi_Tiet_SP/Chi_Tiet_SP.html">
-                            <img src="https://dogolegia.vn/wp-content/uploads/2022/09/Mau-tu-bep-dep-hien-dai-go-cong-nghiep-LG-TB038.jpg"
-                              alt="">
-                          </a>
-                      
-                       <div class="heart">
-                          <i style="color:#B87029;margin-top:8px" class="fa-solid fa-heart"></i>
-                      </div>
-                      </div>
-                  
-                     
-                     
-                  <div id="textttt">
-                      <p><a href="/BaiTapLon/Chi_Tiet_SP/Chi_Tiet_SP.html">MẪU TỦ BẾP HIỆN ĐẠI ĐẸP LG-TB038</a></p>
-                      <strong style="font-size: 23px;color:#BD1003">28.850.000<span>₫</span></strong>
-                      <p style="font-size: 12.5px;opacity: 0.8;">
-                          Nhà sản xuất: ĐỒ GỖ LÊ GIA
-                          Bảo hành: 24 tháng </p>
-                  </div>
-                  </div>
-                  <div class="MAUSP">
-                  
-                    <div class="img">
-                        <a href="/BaiTapLon/Chi_Tiet_SP/Chi_Tiet_SP.html">
-                          <img src="https://dogolegia.vn/wp-content/uploads/2022/09/Mau-tu-bep-dep-hien-dai-go-cong-nghiep-LG-TB106-1.jpg"
-                            alt="">
-                        </a>
-                    
-                     <div class="heart">
+                </div>
+            </div>
+
+        </div>
+        <div id="KHUNG-SPPPP">
+            <div class="MAUSP">
+
+                <div class="img">
+                    <a href="/BaiTapLon/Chi_Tiet_SP/Chi_Tiet_SP.html">
+                        <img src="https://dogolegia.vn/wp-content/uploads/2022/09/Mau-tu-bep-dep-hien-dai-go-cong-nghiep-LG-TB038.jpg" alt="">
+                    </a>
+
+                    <div class="heart">
                         <i style="color:#B87029;margin-top:8px" class="fa-solid fa-heart"></i>
                     </div>
+                </div>
+
+
+
+                <div id="textttt">
+                    <p><a href="/BaiTapLon/Chi_Tiet_SP/Chi_Tiet_SP.html">MẪU TỦ BẾP HIỆN ĐẠI ĐẸP LG-TB038</a></p>
+                    <strong style="font-size: 23px;color:#BD1003">28.850.000<span>₫</span></strong>
+                    <p style="font-size: 12.5px;opacity: 0.8;">
+                        Nhà sản xuất: ĐỒ GỖ LÊ GIA
+                        Bảo hành: 24 tháng </p>
+                </div>
+            </div>
+            <div class="MAUSP">
+
+                <div class="img">
+                    <a href="/BaiTapLon/Chi_Tiet_SP/Chi_Tiet_SP.html">
+                        <img src="https://dogolegia.vn/wp-content/uploads/2022/09/Mau-tu-bep-dep-hien-dai-go-cong-nghiep-LG-TB106-1.jpg" alt="">
+                    </a>
+
+                    <div class="heart">
+                        <i style="color:#B87029;margin-top:8px" class="fa-solid fa-heart"></i>
                     </div>
-                  
-                   
-                   
-                  <div id="textttt">
+                </div>
+
+
+
+                <div id="textttt">
                     <p><a href="/BaiTapLon/Chi_Tiet_SP/Chi_Tiet_SP.html">TỦ BẾP GỖ CÔNG NGHIỆP LG-TB106</a></p>
                     <strong style="font-size: 23px;color:#BD1003">38.050.000<span>₫</span></strong>
                     <p style="font-size: 12.5px;opacity: 0.8;">
                         Nhà sản xuất: ĐỒ GỖ LÊ GIA
                         Bảo hành: 24 tháng </p>
-                  </div>
-                  </div>
-                  <div class="MAUSP">
-                  
-                    <div class="img">
-                        <a href="/BaiTapLon/Chi_Tiet_SP/Chi_Tiet_SP.html">
-                          <img src="https://dogolegia.vn/wp-content/uploads/2022/09/Mau-tu-bep-dep-hien-dai-go-cong-nghiep-LG-TB030-2.jpg"
-                            alt="">
-                        </a>
-                    
-                     <div class="heart">
+                </div>
+            </div>
+            <div class="MAUSP">
+
+                <div class="img">
+                    <a href="/BaiTapLon/Chi_Tiet_SP/Chi_Tiet_SP.html">
+                        <img src="https://dogolegia.vn/wp-content/uploads/2022/09/Mau-tu-bep-dep-hien-dai-go-cong-nghiep-LG-TB030-2.jpg" alt="">
+                    </a>
+
+                    <div class="heart">
                         <i style="color:#B87029;margin-top:8px" class="fa-solid fa-heart"></i>
                     </div>
-                    </div>
-                  
-                   
-                   
-                  <div id="textttt">
+                </div>
+
+
+
+                <div id="textttt">
                     <p><a href="/BaiTapLon/Chi_Tiet_SP/Chi_Tiet_SP.html">MẪU TỦ BẾP HIỆN ĐẠI ĐẸP LG-TB030</a></p>
                     <strong style="font-size: 23px;color:#BD1003">38.650.000<span>₫</span></strong>
                     <p style="font-size: 12.5px;opacity: 0.8;">
                         Nhà sản xuất: ĐỒ GỖ LÊ GIA
                         Bảo hành: 24 tháng </p>
-                  </div>
-                  </div>
-                  <div class="MAUSP">
-                  
-                    <div class="img">
-                        <a href="/BaiTapLon/Chi_Tiet_SP/Chi_Tiet_SP.html">
-                          <img src="https://dogolegia.vn/wp-content/uploads/2022/09/mau-sofa-go-hien-dai-cao-cap-phong-khach-SG103-11-1.jpg"
-                            alt="">
-                        </a>
-                    
-                     <div class="heart">
+                </div>
+            </div>
+            <div class="MAUSP">
+
+                <div class="img">
+                    <a href="/BaiTapLon/Chi_Tiet_SP/Chi_Tiet_SP.html">
+                        <img src="https://dogolegia.vn/wp-content/uploads/2022/09/mau-sofa-go-hien-dai-cao-cap-phong-khach-SG103-11-1.jpg" alt="">
+                    </a>
+
+                    <div class="heart">
                         <i style="color:#B87029;margin-top:8px" class="fa-solid fa-heart"></i>
                     </div>
-                    </div>
-                  
-                   
-                   
-                  <div id="textttt">
+                </div>
+
+
+
+                <div id="textttt">
                     <p><a href="/BaiTapLon/Chi_Tiet_SP/Chi_Tiet_SP.html">MẪU SOFA GỖ HIỆN ĐẠI LG-SG140</a></p>
                     <strong style="font-size: 23px;color:#BD1003">28.500.000<span>₫</span></strong>
                     <p style="font-size: 12.5px;opacity: 0.8;">
                         Nhà sản xuất: ĐỒ GỖ LÊ GIA
                         Bảo hành: 24 tháng </p>
-                  </div>
-                  </div>
-                  <div class="MAUSP">
-                  
-                    <div class="img">
-                        <a href="/BaiTapLon/Chi_Tiet_SP/Chi_Tiet_SP.html">
-                          <img src="https://dogolegia.vn/wp-content/uploads/2022/09/mau-sofa-go-hien-dai-cao-cap-phong-khach-SG139.jpg"
-                            alt="">
-                        </a>
-                    
-                     <div class="heart">
+                </div>
+            </div>
+            <div class="MAUSP">
+
+                <div class="img">
+                    <a href="/BaiTapLon/Chi_Tiet_SP/Chi_Tiet_SP.html">
+                        <img src="https://dogolegia.vn/wp-content/uploads/2022/09/mau-sofa-go-hien-dai-cao-cap-phong-khach-SG139.jpg" alt="">
+                    </a>
+
+                    <div class="heart">
                         <i style="color:#B87029;margin-top:8px" class="fa-solid fa-heart"></i>
                     </div>
-                    </div>
-                  
-                   
-                   
-                  <div id="textttt">
+                </div>
+
+
+
+                <div id="textttt">
                     <p><a href="/BaiTapLon/Chi_Tiet_SP/Chi_Tiet_SP.html">MẪU BÀN GHẾ SOFA GỖ HIỆN ĐẠI LG-SG139</a></p>
                     <strong style="font-size: 23px;color:#BD1003">31.500.000<span>₫</span></strong>
                     <p style="font-size: 12.5px;opacity: 0.8;">
                         Nhà sản xuất: ĐỒ GỖ LÊ GIA
                         Bảo hành: 24 tháng </p>
-                  </div>
-                  </div>
-                  <div class="MAUSP">
-                  
-                    <div class="img">
-                        <a href="/BaiTapLon/Chi_Tiet_SP/Chi_Tiet_SP.html">
-                          <img src="https://dogolegia.vn/wp-content/uploads/2022/09/tong_hop_hinh_anh_sofa_go_noi_that_giao_khach_hang-27-1024x768.jpg"
-                            alt="">
-                        </a>
-                    
-                     <div class="heart">
+                </div>
+            </div>
+            <div class="MAUSP">
+
+                <div class="img">
+                    <a href="/BaiTapLon/Chi_Tiet_SP/Chi_Tiet_SP.html">
+                        <img src="https://dogolegia.vn/wp-content/uploads/2022/09/tong_hop_hinh_anh_sofa_go_noi_that_giao_khach_hang-27-1024x768.jpg" alt="">
+                    </a>
+
+                    <div class="heart">
                         <i style="color:#B87029;margin-top:8px" class="fa-solid fa-heart"></i>
                     </div>
-                    </div>
-                  
-                   
-                   
-                  <div id="textttt">
+                </div>
+
+
+
+                <div id="textttt">
                     <p><a href="/BaiTapLon/Chi_Tiet_SP/Chi_Tiet_SP.html">MẪU SOFA GỖ CAO CẤP LG-SG138</a></p>
                     <strong style="font-size: 23px;color:#BD1003">23.500.000<span>₫</span></strong>
                     <p style="font-size: 12.5px;opacity: 0.8;">
                         Nhà sản xuất: ĐỒ GỖ LÊ GIA
                         Bảo hành: 24 tháng </p>
-                  </div>
-                  </div>
-               
-                  </div>
-                <div id="XCH">
-                    <a href="/BaiTapLon/San_Pham/San_Pham.html">
-                        <span>Xem cửa hàng</span>
-
-                        <i class="gg-chevron-right" aria-hidden="true" style="margin-top:-18px;margin-left:130px"></i>
-                    </a>
-
                 </div>
-            </section>
+            </div>
+
+        </div>
+        <div id="XCH">
+            <a href="/BaiTapLon/San_Pham/San_Pham.html">
+                <span>Xem cửa hàng</span>
+
+                <i class="gg-chevron-right" aria-hidden="true" style="margin-top:-18px;margin-left:130px"></i>
+            </a>
+
+        </div>
+    </section>
     <section id="DTT">
         <div id="dtt">
             <img src="https://dogolegia.vn/wp-content/uploads/2022/09/interior-has-armchair-empty-white-wall_41470-1722.jpg" style="width:100%;height:500px" alt="">

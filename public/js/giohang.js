@@ -44,3 +44,44 @@
             checkbox.checked = this.checked;
         }
     }
+    document.addEventListener('DOMContentLoaded', function() {
+        document.querySelectorAll('.tang, .giam').forEach(button => {
+            button.addEventListener('click', function() {
+                const isIncrement = this.classList.contains('giam');
+                const quantityInput = this.closest('.span-sl').querySelector('.soluong');
+                const cartItemId = this.closest('.menu-gioHang2').querySelector('input[name="selected_items[]"]').value;
+                let newQuantity = parseInt(quantityInput.value);
+    
+                if (isIncrement) {
+                    newQuantity++;
+                } else if (newQuantity > 1) {
+                    newQuantity--;
+                }
+    
+                quantityInput.value = newQuantity;
+                updateCart(cartItemId, newQuantity, this.closest('.menu-gioHang2'));
+            });
+        });
+    });
+    
+    function updateCart(cartItemId, quantity, cartItemElement) {
+        const updateUrl = document.getElementById('cart-update-url').value;
+    
+        fetch(updateUrl, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').getAttribute('content')
+            },
+            body: JSON.stringify({
+                cart_item_id: cartItemId,
+                quantity: quantity
+            })
+        })
+        .then(response => response.json())
+       
+        .catch(error => console.error('Lỗi:', error));
+    }
+    function reloadPage() {
+        location.reload();
+    }

@@ -76,19 +76,20 @@ class UserController extends Controller
 
     // Tiếp tục xử lý nếu dữ liệu hợp lệ
     try {
-        User::create([
+        $user = User::create([
             'name' => $request->name,
             'email' => $request->email,
             'password' => Hash::make($request->password),
             'phone' => $request->phone, // Chắc chắn rằng bạn đã có trường phone từ dữ liệu POST
         ]);
+        Auth::login($user);
         toastr()->success('Đã tạo tài khoản thành công');
     } catch (\Throwable $th) {
         dd($th);
       
     }
 
-    return redirect()->route('login');
+    return redirect()->route('TrangChu');
 }
 
     public function postLogin(Request $req){

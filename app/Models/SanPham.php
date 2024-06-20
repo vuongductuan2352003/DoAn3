@@ -32,5 +32,9 @@ class SanPham extends Model
      {
          return $this->belongsTo(GioHang::class, 'MaSanPham', 'MaSanPham');
      }
+     public function chitiethoadon()
+     {
+         return $this->hasMany(chitiethoadon::class, 'MaSanPham', 'MaSanPham');
+     }
  
 }

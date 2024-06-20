@@ -6,7 +6,7 @@
             <nav><a href="https://dogolegia.vn">Trang chủ</a> <span>/</span> <a href="https://dogolegia.vn/cua-hang/">Cửa hàng</a> <span class="divider">/</span> </nav>
         </div>
 
-      
+
         <div class="SP-main">
             <div id="SP-1">
                 <img src="{{ asset('ĐỒ GỖ MỸ NGHỆ/' . $chiTietSanPham->AnhDaiDien) }}" alt="">
@@ -23,11 +23,11 @@
                     <p>Bảo hành: {{ $chiTietSanPham->BaoHanh }}</p>
                 </div>
                 <p style="color:#7a9c59">Còn hàng</p>
-            
+
                 <form id="addToCartForm" action="{{ route('giohang.add', ['id' => $chiTietSanPham->MaSanPham]) }}" method="post">
-    @csrf
-    <button class="tgh" style="float:left;">Thêm vào giỏ</button>
-</form>
+                    @csrf
+                    <button class="tgh" style="float:left;">Thêm vào giỏ</button>
+                </form>
 
                 <div style="clear: both;color:#334862;font-size:18px;margin-top:10px;float:left">
                     <p>Add to wishlist</p>

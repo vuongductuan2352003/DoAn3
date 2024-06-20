@@ -7,21 +7,25 @@ use Illuminate\Http\Request;
 use App\Models\SanPham;
 
 use Gloudemans\Shoppingcart\CartItem;
-
-use Gloudemans\Shoppingcart\Facades\Cart;
+use App\Models\User;
+use App\Models\GioHang;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Session;
+use Gloudemans\Shoppingcart\Facades\Cart;
+
 
 class GioHangController extends Controller
 {
       
   
-    
+   
     public function index() {
         $cartItem = Cart::content();
-        
+        $userId = auth()->id();
+            $cart = GioHang::where('id_user',$userId)->get();
         $totalQuantity = Cart::count();
         
-        return view('GioHang.index', ['cartItems' => $cartItem, 'totalQuantity'=> $totalQuantity]);
+        return view('GioHang.index', ['cartItems' => $cartItem, 'totalQuantity'=> $totalQuantity], compact('cart'));
     }
 
 
@@ -108,4 +112,49 @@ class GioHangController extends Controller
         toastr()->success('Tất cả sản phẩm đã được xóa khỏi vào giỏ hàng!');
         return back();
     }
+    
+//     public function removeAll() {
+//         $userId = Auth::id();
+//         GioHang::where('id', $userId)->delete();
+
+//         toastr()->success('Tất cả sản phẩm đã được xóa khỏi vào giỏ hàng!');
+//         return back();
+// }
+    
+    
+    public function removeItemm($rowId){
+        // Xóa mục khỏi giỏ hàng dựa trên rowId
+        GioHang::where('MaGioHang', $rowId)->delete();
+        // Hiển thị thông báo xóa thành công
+        toastr()->success('Sản phẩm đã được xóa khỏi giỏ hàng!');
+        // Chuyển hướng người dùng trở lại trang trước đó
+        return back();
+    }
+    // public function removeAll() {
+    //     GioHang::destroy();
+    //     toastr()->success('Tất cả sản phẩm đã được xóa khỏi vào giỏ hàng!');
+    //     return back();
+    // }
+
+
+
+
+    public function update(Request $request)
+    {
+        $cartItemId = $request->input('cart_item_id');
+        $quantity = $request->input('quantity');
+    
+        // Tìm item giỏ hàng theo ID
+        $cartItem = GioHang::find($cartItemId);
+    
+        if ($cartItem) {
+            $cartItem->SoLuong = $quantity;
+            $cartItem->save();
+    
+           
+        } else {
+            return response()->json(['success' => false, 'error' => 'Sản phẩm không tồn tại trong giỏ hàng.']);
+        }
+    }
+    
 }

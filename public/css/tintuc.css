@@ -3,20 +3,19 @@ main{
     height: auto;
 }
 .tt-left{
-    border: 1px solid black;
-    width: 69%;
-    height: 1000px;
+    
+    width: 59%;
+    height: 1100px;
  float: left;
-}
-.tt-right{
-    border: 1px solid black;
-    width: 30%;
-    height: 1000px;
-float: left;
+margin-left: 100px;
 }
 
 .news-item {
-    margin: 30px;
+height: 325px;
+    float: left;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-right: 40px;
     width: 400px;
     border: 1px solid #ddd;
     border-radius: 10px;
@@ -53,6 +52,10 @@ float: left;
     border-radius: 5px;
 }
 
+.news-item:hover .date-box {
+    background-color: rgba(55, 109, 167, 0.8); /* Đổi sang màu cam khi hover */
+}
+
 .date-box .day {
     font-size: 18px;
     font-weight: bold;
@@ -81,4 +84,120 @@ float: left;
     margin: 10px 0;
     font-size: 16px;
     color: #666;
+}
+
+.tt-right {
+    float: left;
+    width: 29%;
+    height: 600px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.search-container {
+    margin-top: 20px;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.search-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+}
+
+.search-button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+    background-color: #0056b3;
+}
+
+
+.branches {
+    margin-bottom: 20px;
+}
+
+.branches h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.branch-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.branch-item {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+    padding: 8px;
+    background-color: #f9f9f9;
+    border-left: 4px solid #007bff;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.branch-item:hover {
+    background-color: #f0f8ff;
+    border-color: #0056b3;
+}
+
+.new-posts {
+    margin-top: 20px;
+}
+
+.new-posts h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.post {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.post-img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.post-content {
+    flex: 1;
+}
+
+.post-title {
+    font-size: 16px;
+    margin: 0 0 5px 0;
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+
+.post-title:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+.post-excerpt {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
 }

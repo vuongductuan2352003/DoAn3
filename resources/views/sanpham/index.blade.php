@@ -387,49 +387,50 @@
 
         </div>
         <div class="sanpham-right">
-        @foreach ($sanPhams as $sanPham)
-    
+            @foreach ($sanPhams as $sanPham)
+
             <a href="{{ route('masanpham', ['id' => $sanPham['MaSanPham']]) }}">
-          
-              <div class="MAUSP">
-        <div class="hover-img"><div class="heart">
-                <i style="color:#B87029;margin-top:5px; " class="fa-solid fa-heart"></i>
-            </div>
-            <div class="img zoom">
-                <img src="{{ asset('ĐỒ GỖ MỸ NGHỆ/' . $sanPham->AnhDaiDien) }}">
-            </div>
-            <div class="m">
-                <span>XEM NHANH</span>
-            </div>
-            
+
+                <div class="MAUSP">
+                    <div class="hover-img">
+                        <div class="heart">
+                            <i style="color:#B87029;margin-top:5px; " class="fa-solid fa-heart"></i>
+                        </div>
+                        <div class="img zoom">
+                            <img src="{{ asset('ĐỒ GỖ MỸ NGHỆ/' . $sanPham->AnhDaiDien) }}">
+                        </div>
+                        <div class="m">
+                            <span>XEM NHANH</span>
+                        </div>
+
+                    </div>
+                    <div class="textttt">
+                        <p style="padding-top:20px;color:red"><a href="">{{ $sanPham->TenSanPham }}</a></p>
+                        <bdi style="font-size: 23px;color:#BD1003;"> <strong>{{ number_format($sanPham->Gia, 0, ',', '.') }}₫</strong></bdi>
+                        <p style="font-size: 12px; color:black; ">
+                            Nhà sản xuất: {{ $sanPham->NhaSanXuat }}
+                            Bảo hành: {{ $sanPham->BaoHanh }}
+                        </p>
+            </a>
+
         </div>
-        <div class="textttt">
-            <p  style="padding-top:20px;color:red"><a href="">{{ $sanPham->TenSanPham }}</a></p>
-            <bdi style="font-size: 23px;color:#BD1003;"> <strong>{{ number_format($sanPham->Gia, 0, ',', '.') }}₫</strong></bdi>
-            <p style="font-size: 12px; color:black; ">
-                Nhà sản xuất: {{ $sanPham->NhaSanXuat }}
-                Bảo hành: {{ $sanPham->BaoHanh }}
-            </p>  
-        </a>
-            
         </div>
-    </div>
-@endforeach
-@if ($sanPhams->lastPage() > 1)
-    <ul class="pagination">
-        <li class="{{ ($sanPhams->currentPage() == 1) ? ' disabled' : '' }}">
-            <a href="{{ $sanPhams->url(1) }}">«</a>
-        </li>
-        @for ($i = 1; $i <= $sanPhams->lastPage(); $i++)
-            <li class="{{ ($sanPhams->currentPage() == $i) ? ' active' : '' }}">
-                <a href="{{ $sanPhams->url($i) }}">{{ $i }}</a>
+        @endforeach
+        @if ($sanPhams->lastPage() > 1)
+        <ul class="pagination">
+            <li class="{{ ($sanPhams->currentPage() == 1) ? ' disabled' : '' }}">
+                <a href="{{ $sanPhams->url(1) }}">«</a>
             </li>
-        @endfor
-        <li class="{{ ($sanPhams->currentPage() == $sanPhams->lastPage()) ? ' disabled' : '' }}">
-            <a href="{{ $sanPhams->url($sanPhams->currentPage()+1) }}">»</a>
-        </li>
-    </ul>
-@endif
+            @for ($i = 1; $i <= $sanPhams->lastPage(); $i++)
+                <li class="{{ ($sanPhams->currentPage() == $i) ? ' active' : '' }}">
+                    <a href="{{ $sanPhams->url($i) }}">{{ $i }}</a>
+                </li>
+                @endfor
+                <li class="{{ ($sanPhams->currentPage() == $sanPhams->lastPage()) ? ' disabled' : '' }}">
+                    <a href="{{ $sanPhams->url($sanPhams->currentPage()+1) }}">»</a>
+                </li>
+        </ul>
+        @endif
 
 
 
@@ -437,7 +438,7 @@
 
         </div>
 
-        
+
     </section>
 
 

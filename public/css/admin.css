@@ -53,6 +53,7 @@ h4 {
     overflow: hidden;
     transition: all 0.35s ease-in-out;
     width: 100%;
+ 
     background: var(--bs-dark-bg-subtle);
 }
 
@@ -130,10 +131,7 @@ a.sidebar-link {
     }
 }
 
-.card {
-    box-shadow: 0 0 .875rem 0 rgba(34, 46, 60, .05);
-    margin-bottom: 24px;
-}
+
 
 .illustration {
     background-color: var(--bs-primary-bg-subtle);
@@ -253,13 +251,13 @@ html[data-bs-theme="light"] .theme-toggle .fa-moon {
     font-size: 30px;
 }
 
-table {
+.table {
     border-collapse: collapse; /* Để loại bỏ khoảng trống giữa các đường viền */
     width: 100%;
     table-layout: fixed;
   }
 
- table th, td {
+ .table th, td {
     border: 1px solid black; /* Thiết lập đường viền 1px đen cho các ô và ô tiêu đề */
    
     padding: 8px;
@@ -406,4 +404,152 @@ font-size: 20px;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+}
+
+
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+ justify-content: center;
+
+}
+.card {
+    width: 300px;
+    height: 400px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff;
+    margin-top: 20px;
+}
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.card-body {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.profile-image {
+    text-align: center;
+    margin-bottom: 16px;
+}
+.profile-image img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.profile-info p {
+    margin: 8px 0;
+    text-align: center;
+}
+.card .actions {
+    margin-top: 10px;
+    text-align: center;
+}
+.card .actions button {
+   
+    margin-left: 5%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container {
+    width: 100%;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+}
+
+
+
+.invoice-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.invoice-table th, .invoice-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+    word-wrap: break-word;
+    max-width: 100px;
+}
+
+.invoice-table th {
+    background-color: #c28118;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.invoice-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.invoice-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.invoice-table td {
+    text-align: left;
+    vertical-align: middle;
+}
+
+
+
+.wide-column {
+    max-width: 350px;
+    width: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .invoice-table, .invoice-table th, .invoice-table td {
+        display: block;
+        width: 100%;
+    }
+
+    .invoice-table th, .invoice-table td {
+        text-align: left;
+    }
+
+    .invoice-table th {
+        background-color: #f2f2f2;
+        color: black;
+    }
+}
+
+
+.invoice-title {
+
+    margin-bottom: 20px;
+    font-size: 32px;
+    color:#5a4137;
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }

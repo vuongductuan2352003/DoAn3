@@ -79,7 +79,7 @@
             <div class="MenuTrangChuu">
                 <nav>
              
-                    <a href="{{url('hi')}}" style="color: #B87209;"><i class="fa-solid fa-house"></i> Trang chủ </a>
+                    <a href="{{url('/')}}" style="color: #B87209;"><i class="fa-solid fa-house"></i> Trang chủ </a>
                     <a href="{{url('ve-chung-toi')}}">Về chúng tôi</a>
                     <a href="">Dịch vụ</a>
                     <a href="{{url('san-pham')}}">Sản phẩm đẹp <i class="fa-solid fa-chevron-down" style="font-size: 12px;color:#B87209"></i>

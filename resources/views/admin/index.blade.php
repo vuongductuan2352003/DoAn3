@@ -24,19 +24,19 @@
                        <li class="sidebar-header">
                            QUẢN TRỊ VIÊN
                        </li>
-                       <li class="sidebar-item">
+                       <li class="sidebar-item" id="click2">
                            <a href="#" class="sidebar-link">
                                <i class="fa-solid fa-list pe-2"></i>
-                               Danh Mục
+                               Hóa Đơn
                            </a>
                        </li>
-                       <li class="sidebar-item">
+                       <li class="sidebar-item" id="click1">
                            <a href="#" class="sidebar-link collapsed" data-bs-target="#pages" data-bs-toggle="collapse" aria-expanded="false"><i class="fa-solid fa-file-lines pe-2" id="SanPham"></i>
                                Sản Phẩm
                            </a>
 
                        </li>
-                       <li class="sidebar-item">
+                       <li class="sidebar-item" id="click3">
                            <a href="#" class="sidebar-link collapsed" data-bs-target="#posts" data-bs-toggle="collapse" aria-expanded="false"><i class="fa-solid fa-sliders pe-2" id="Khachhang"></i>
                                Khách Hàng
                            </a>
@@ -97,98 +97,9 @@
                        </ul>
                    </div>
                </nav>
-               <main class="content px-3 py-2">
-                   <!-- <div class="container-fluid">
-                    
-                    <div class="row">
-                        <div class="col-12 col-md-6 d-flex">
-                            <div class="card flex-fill border-0 illustration">
-                                <div class="card-body p-0 d-flex flex-fill">
-                                    <div class="row g-0 w-100">
-                                        <div class="col-6">
-                                            <div class="p-3 m-1">
-                                                <h4>CHÀO MỪNG BẠN ĐẾN VỚI QUẢN TRỊ VIÊN!</h4>
-                                                <p class="mb-0">Admin Dashboard, CodzSword</p>
-                                            </div>
-                                        </div>
-                                        <div class="col-6 align-self-end text-end">
-                                            <img src="image/customer-support.jpg" class="img-fluid illustration-img"
-                                                alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 d-flex">
-                            <div class="card flex-fill border-0">
-                                <div class="card-body py-4">
-                                    <div class="d-flex align-items-start">
-                                        <div class="flex-grow-1">
-                                            <h4 class="mb-2">
-                                                $ 78.00
-                                            </h4>
-                                            <p class="mb-2">
-                                                Total Earnings
-                                            </p>
-                                            <div class="mb-0">
-                                                <span class="badge text-success me-2">
-                                                    +9.0%
-                                                </span>
-                                                <span class="text-muted">
-                                                    Since Last Month
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                  
-                    <div class="card border-0">
-                        <div class="card-header">
-                            <h5 class="card-title">
-                                Basic Table
-                            </h5>
-                            <h6 class="card-subtitle text-muted">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ducimus,
-                                necessitatibus reprehenderit itaque!
-                            </h6>
-                        </div>
-                        <div class="card-body">
-                            <table class="table">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">#</th>
-                                        <th scope="col">First</th>
-                                        <th scope="col">Last</th>
-                                        <th scope="col">Handle</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <th scope="row">1</th>
-                                        <td>Mark</td>
-                                        <td>Otto</td>
-                                        <td>@mdo</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">2</th>
-                                        <td>Jacob</td>
-                                        <td>Thornton</td>
-                                        <td>@fat</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">3</th>
-                                        <td colspan="2">Larry the Bird</td>
-                                        <td>@twitter</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div> -->
-                   <div class="SanPham">
+               <main class="content px-3 py-2 p">
+                   
+                   <div class="SanPham" id="main1" style="display:none">
                        <div class="sanpham">SẢN PHẨM</div>
                        <div>
                            <table>
@@ -207,58 +118,81 @@
                                    <th style="width: 10%">Hành động</th>
                                </tr>
                            </table>
-        
-                       <div class="menu-sanpham">
-      @php $i = 1 @endphp <!-- Khởi tạo biến đếm -->
-    @foreach ($admin as $sanPham) 
-        <table class="table">
-            <tr>
-                <td style="width: 5%">{{ $i++ }}</td>
-                <td style="width: 5%">{{ $sanPham->MaSanPham }}</td>
-                <td style="width: 12%">{{$sanPham->danhmuc->TenDanhMuc }}</td>
-                <td id="hienthi-img" style="width: 15%">{{ $sanPham->TenSanPham }}
-                    <img src="{{ asset('ĐỒ GỖ MỸ NGHỆ/' . $sanPham->AnhDaiDien) }}" alt="">
-                </td>
-                <td style="width: 8%">{{ number_format($sanPham->Gia, 0, ',', '.') }}₫</td>
-                <td style="width: 5%">{{ $sanPham->SoLuong }}</td>
-                <td style="width: 15%">{{ $sanPham->NhaSanXuat }}</td>
-                <td style="width: 5%">{{ $sanPham->BaoHanh }}</td>
-                <td style="width: 10%">
-                    <div>
-                        <button onclick="showEditModal('{{$sanPham->MaSanPham}}')"><i class="fa fa-wrench" > </i></button>
-                        <!-- Sử dụng onclick để gọi hàm confirmDelete -->
-                        <button type="button" onclick="confirmDelete('{{$sanPham->MaSanPham}}')"><i class="fa fa-trash"></i></button>
-                    </div>
-                </td>
-            </tr>
-        </table>
-        <!-- Form xác nhận xóa -->
-        <form id="deleteForm{{$sanPham->MaSanPham}}" method="POST" action="{{ route('admin.delete', ['MaSanPham' => $sanPham->MaSanPham]) }}" style="display: none;">
-            @csrf
-            @method('DELETE')
-        </form>
-    @endforeach
-</div>
 
-<!-- Modal sửa sản phẩm -->
-<div id="editModal" >
-    <form id="editForm" method="POST">
-        @csrf
-        @method('PUT')
-        <input type="hidden" id="editMaSanPham" name="MaSanPham">
-        <label for="editTenSanPham">Tên Sản Phẩm:</label>
-        <input type="text" id="editTenSanPham" name="TenSanPham" required>
-        <label for="editGia">Giá:</label>
-        <input type="text" id="editGia" name="Gia" required>
-        <label for="editSoLuong">Số Lượng:</label>
-        <input type="text" id="editSoLuong" name="SoLuong" required>
-        <label for="editNhaSanXuat">Nhà Sản Xuất:</label>
-        <input type="text" id="editNhaSanXuat" name="NhaSanXuat" required>
-        <label for="editBaoHanh">Bảo Hành:</label>
-        <input type="text" id="editBaoHanh" name="BaoHanh" required>
-        <button type="submit">Sửa</button>
-    </form>
-</div>
+                           <div class="menu-sanpham">
+                               @php $i = 1 @endphp <!-- Khởi tạo biến đếm -->
+                               @foreach ($admin as $sanPham)
+
+                               <table class="table">
+                                   <tr>
+                                       <td style="width: 5%">{{ $i++ }}</td>
+                                       <td style="width: 5%">{{ $sanPham->MaSanPham }}</td>
+                                       <td style="width: 12%">{{$sanPham->danhmuc->TenDanhMuc }}</td>
+                                       <td id="hienthi-img" style="width: 15%">{{ $sanPham->TenSanPham }}
+                                           <img src="{{ asset('ĐỒ GỖ MỸ NGHỆ/' . $sanPham->AnhDaiDien) }}" alt="">
+                                       </td>
+                                       <td style="width: 8%">{{ number_format($sanPham->Gia, 0, ',', '.') }}₫</td>
+                                       <td style="width: 5%">{{ $sanPham->SoLuong }}</td>
+                                       <td style="width: 15%">{{ $sanPham->NhaSanXuat }}</td>
+                                       <td style="width: 5%">{{ $sanPham->BaoHanh }}</td>
+                                       <td style="width: 10%">
+                                           <div>
+                                               <button onclick="showEditModal('{{$sanPham->MaSanPham}}')"><i class="fa fa-wrench"> </i></button>
+                                               <!-- Sử dụng onclick để gọi hàm confirmDelete -->
+                                               <button type="button" onclick="confirmDelete('{{$sanPham->MaSanPham}}')"><i class="fa fa-trash"></i></button>
+                                           </div>
+                                       </td>
+                                   </tr>
+                               </table>
+                               <!-- Form xác nhận xóa -->
+                               <form id="deleteForm{{$sanPham->MaSanPham}}" method="POST" action="{{ route('admin.delete', ['MaSanPham' => $sanPham->MaSanPham]) }}" style="display: none;">
+                                   @csrf
+                                   @method('DELETE')
+                               </form>
+                               @endforeach
+
+
+
+
+                           </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                           <!-- Modal sửa sản phẩm -->
+                           <div id="editModal">
+                               <form id="editForm" method="POST">
+                                   @csrf
+                                   @method('PUT')
+                                   <input type="hidden" id="editMaSanPham" name="MaSanPham">
+                                   <label for="editTenSanPham">Tên Sản Phẩm:</label>
+                                   <input type="text" id="editTenSanPham" name="TenSanPham" required>
+                                   <label for="editGia">Giá:</label>
+                                   <input type="text" id="editGia" name="Gia" required>
+                                   <label for="editSoLuong">Số Lượng:</label>
+                                   <input type="text" id="editSoLuong" name="SoLuong" required>
+                                   <label for="editNhaSanXuat">Nhà Sản Xuất:</label>
+                                   <input type="text" id="editNhaSanXuat" name="NhaSanXuat" required>
+                                   <label for="editBaoHanh">Bảo Hành:</label>
+                                   <input type="text" id="editBaoHanh" name="BaoHanh" required>
+                                   <button type="submit">Sửa</button>
+                               </form>
+                           </div>
+
+
+
+
+
 
 
 
@@ -268,6 +202,100 @@
 
                        </div>
                    </div>
+                   <div class="container" id="main2" style="display:block">
+                       <h2 class="invoice-title">Thông tin hóa đơn</h2>
+                       <table class="invoice-table">
+                           <thead>
+                               <tr>
+                                   <th>ID</th>
+                                   <th class="wide-column">Tên</th>
+                                   <th>Phone</th>
+                                   <th class="wide-column">Email</th>
+                                   <th class="wide-column">Địa Chỉ</th>
+                                   <th>Giao Hàng</th>
+                                   <th>Chi Tiết</th>
+                                   <th class="wide-column">Ngày</th>
+                                   <th>Trạng Thái</th>
+                                   <th>Tùy Biến</th>
+                               </tr>
+                           </thead>
+                           <tbody>
+                               @foreach ($hoaDon as $hoaDons)
+                               @if ($hoaDons->khachhang)
+
+
+                               <tr>
+                                   <td>{{ $hoaDons->Id }}</td>
+                                   <td class="wide-column">{{ $hoaDons->khachhang->TenKH }}</td>
+                                   <td>{{ $hoaDons->khachhang->SDT }}</td>
+                                   <td class="wide-column">{{ $hoaDons->khachhang->Email }}</td>
+                                   <td class="wide-column">{{ $hoaDons->khachhang->DiaChi }}</td>
+                                   <td>{{ $hoaDons->GhiChu }}</td>
+                                   <td>Chi Tiết</td>
+                                   <td class="wide-column">{{ $hoaDons->NgayTao }}</td>
+                                   <td>
+                                       @if ($hoaDons->TrangThai == '0')
+
+                                       <form action="{{ route('hoadon.duyet', $hoaDons->MaHoaDon) }}" method="POST">
+                                           @csrf
+                                           @method('PATCH')
+                                           <button type="submit" class="btn btn-warning">Chưa Xác Nhận</button>
+                                       </form>
+                                       @else
+                                       <button class="btn btn-success" disabled>Đã Xác Nhận</button>
+                                       @endif
+
+                                   <td>
+                                       <form id="deleteFormmm{{ $hoaDons->MaHoaDon }}" action="{{ route('hoadon.delete', $hoaDons->MaHoaDon) }}" method="POST" style="display: none;">
+                                           @csrf
+                                           @method('DELETE')
+                                       </form>
+                                       <button type="button" class="btn btn-danger" onclick="confirmDeleteee('{{$hoaDons->MaHoaDon }}')"><i class="fa fa-trash"></i> Xóa</button>
+                                   </td>
+                                   @endif
+
+
+                                   @endforeach
+                           </tbody>
+                       </table>
+                   </div>
+
+
+
+                   <div id="main3" style="display:none">
+                       <h3 class="card-title">Thông tin khách hàng</h3>
+                       <div class="container">
+                           @foreach ($khachHang as $khachhang)
+                           <div class="card">
+                               <div class="card-body">
+                                   <div class="profile-image">
+                                       <img src="{{ asset('ĐỒ GỖ MỸ NGHỆ/' . $khachhang->img) }}" alt="Customer Image">
+                                   </div>
+                                   <div class="profile-info">
+                                       <p><strong>Mã khách hàng:</strong> {{ $khachhang->Id }}</p>
+                                       <p><strong>Tên khách hàng:</strong> {{ $khachhang->TenKH }}</p>
+                                       <p><strong>Giới tính:</strong> {{ $khachhang->GioiTinh }}</p>
+                                       <p><strong>Địa chỉ:</strong> {{ $khachhang->DiaChi }}</p>
+                                       <p><strong>Số điện thoại:</strong> {{ $khachhang->SDT }}</p>
+                                       <p><strong>Email:</strong> {{ $khachhang->Email }}</p>
+                                       <p><strong>Tài khoản:</strong> {{ $khachhang->id_user }}</p>
+                                       <div class="actions">
+                                           <button onclick="showEditModall('{{$khachhang->Id}}')"><i class="fa fa-wrench"></i> Sửa</button>
+                                           <button type="button" onclick="confirmDeletee('{{$khachhang->Id}}')"><i class="fa fa-trash"></i> Xóa</button>
+                                       </div>
+                                       <form id="deleteFormm{{$khachhang->Id}}" method="POST" action="{{ route('khachhang.delete', ['Id' => $khachhang->Id]) }}" style="display: none;">
+                                           @csrf
+                                           @method('DELETE')
+                                       </form>
+                                   </div>
+                               </div>
+                           </div>
+                           @endforeach
+                       </div>
+                   </div>
+                   <div id="main4">
+
+                   </div>
                </main>
                <a href="#" class="theme-toggle">
                    <i class="fa-regular fa-moon"></i>
@@ -275,8 +303,8 @@
                </a>
 
            </div>
-          
-      
+
+
        </div>
        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>
        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -285,3 +313,43 @@
    </body>
 
    </html>
+
+
+
+
+   <!--   @foreach ($hoaDon as $donHang)
+
+                       <div class="card">
+                           <div class="card-header">
+                               Hóa đơn #{{ $donHang->MaHoaDon }}
+                           </div>
+                           <h5 class="card-title mt-4">Thông tin đơn hàng</h5>
+                           @if ($donHang && $donHang->chitiethoadon->count() > 0)
+                           <ul class="list-group">
+                               @foreach ($donHang->chitiethoadon as $chiTiet)
+                               @if ($chiTiet->sanpham) 
+                               <li class="list-group-item">
+                                   <div class="row">
+                                       <div class="col-md-2">
+                                           <img src="{{ asset('ĐỒ GỖ MỸ NGHỆ/' . $chiTiet->sanpham->AnhDaiDien) }}" alt="{{ $chiTiet->sanpham->TenSanPham }}" class="img-fluid product-image">
+                                       </div>
+                                       <div class="col-md-10">
+                                           <p><strong>Sản phẩm:</strong> {{ $chiTiet->sanpham->TenSanPham }}</p>
+                                           <p><strong>Số lượng:</strong> {{ $chiTiet->SoLuong }}</p>
+                                           <p><strong>Giá:</strong> {{ number_format($chiTiet->sanpham->Gia, 0, ',', '.') }}₫</p>
+                                           <p><strong>Tổng:</strong> {{ number_format($chiTiet->TongGia, 0, ',', '.') }}₫</p>
+                                       </div>
+                                   </div>
+                               </li>
+                               @endif
+                               @endforeach
+                           </ul>
+                           <h5 class="card-title mt-4">Tổng tiền: <strong>{{ number_format($donHang->TongGia, 0, ',', '.') }}₫</strong></h5>
+                           @else
+                           <p>Không có chi tiết đơn hàng nào để hiển thị.</p>
+                           @endif
+                       </div>
+
+                   </div>
+
+                   @endforeach -->
